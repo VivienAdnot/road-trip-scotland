@@ -231,9 +231,25 @@ const TRIPS = {
       {base:'lomond',    nights:1}
     ],
     legs:[
-      {from:'edinburgh', to:'glencoe', via:'Stirling', time:'~2h45'},
-      {from:'glencoe',   to:'skye',    via:'Eilean Donan', time:'~2h45'},
-      {from:'skye',      to:'lomond',  via:'coupé à Fort William', time:'~4h', warn:true}
+      {from:'edinburgh', to:'glencoe', via:'Stirling', drive:'~2h45 de conduite',
+       stops:[
+         {at:'Château de Stirling', seg:'1h', why:'château + déjeuner sur le départ'},
+         {at:'Tyndrum (Green Welly)', seg:'1h', why:'pause café / essence'},
+         {at:'Rannoch Moor', seg:'45 min', why:'arrêt photo, entrée dans Glencoe'}
+       ]},
+      {from:'glencoe', to:'skye', via:'Eilean Donan', drive:'~2h45 de conduite',
+       stops:[
+         {at:'Eilean Donan', seg:'1h45', why:'le château sur son îlot — arrêt culte'},
+         {at:'Sligachan', seg:'1h', why:'vue sur les Cuillin avant Portree'}
+       ]},
+      {from:'skye', to:'lomond', via:'Eilean Donan · Fort William · Glencoe', drive:'~4h de conduite', warn:true,
+       note:"Le seul vrai long trajet du court séjour, et tu es seul au volant. Découpé en segments courts (jamais plus d'~1h30), ça devient l'une des plus belles routes d'Écosse — mais c'est une journée entière, pas un sprint : pars tôt. Le lendemain, Loch Lomond → aéroport de Glasgow ne fait que ~45 min. Option plus douce si ça pèse : ajouter une nuit à Fort William/Glencoe (→ 8 nuits).",
+       stops:[
+         {at:'Eilean Donan', seg:'1h', why:'café, château sur l’eau'},
+         {at:'Fort William', seg:'1h15', why:'déjeuner, plein d’essence'},
+         {at:'Glencoe (Three Sisters)', seg:'30 min', why:'belvédère, se dégourdir'},
+         {at:'Rannoch Moor → Loch Lomond', seg:'1h30', why:'paysages, arrivée tranquille'}
+       ]}
     ]
   },
   long: {
@@ -251,10 +267,28 @@ const TRIPS = {
       {base:'cairngorms',nights:2}
     ],
     legs:[
-      {from:'edinburgh',  to:'lomond',     via:'Trossachs', time:'~1h15'},
-      {from:'lomond',     to:'glencoe',    via:'Rannoch Moor', time:'~1h30'},
-      {from:'glencoe',    to:'skye',       via:'Eilean Donan · Plockton', time:'~2h45'},
-      {from:'skye',       to:'cairngorms', via:'Inverness', time:'~2h45'}
+      {from:'edinburgh', to:'lomond', via:'Trossachs', drive:'~1h15 de conduite',
+       stops:[
+         {at:'Les Kelpies (Falkirk)', seg:'40 min', why:'sculptures géantes, si envie'},
+         {at:'Aberfoyle / Trossachs', seg:'35 min', why:'entrée dans le parc'}
+       ]},
+      {from:'lomond', to:'glencoe', via:'Rannoch Moor', drive:'~1h30 de conduite',
+       stops:[
+         {at:'Tyndrum (Green Welly)', seg:'45 min', why:'pause café / essence'},
+         {at:'Rannoch Moor', seg:'45 min', why:'le grand vide, arrêt photo'}
+       ]},
+      {from:'glencoe', to:'skye', via:'Eilean Donan', drive:'~2h45 de conduite',
+       stops:[
+         {at:'Fort William', seg:'30 min', why:'ravitaillement'},
+         {at:'Eilean Donan', seg:'1h15', why:'le château incontournable'},
+         {at:'Sligachan', seg:'1h', why:'les Cuillin avant Portree'}
+       ]},
+      {from:'skye', to:'cairngorms', via:'Loch Ness · Inverness', drive:'~2h45 de conduite',
+       stops:[
+         {at:'Eilean Donan', seg:'1h', why:'dernier regard sur l’ouest'},
+         {at:'Loch Ness / Inverness', seg:'1h15', why:'déjeuner, le grand loch'},
+         {at:'Aviemore', seg:'45 min', why:'entrée dans les Cairngorms'}
+       ]}
     ]
   }
 };

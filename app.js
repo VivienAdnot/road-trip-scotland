@@ -65,13 +65,27 @@ function actCard(a,bi,ai,col){
     </div>
   </article>`;
 }
+/* ---------- transfer (leg between two bases) ---------- */
+function legBlock(leg){
+  const stops=(leg.stops||[]).map(s=>
+    `<span class="arr">→</span><span class="stop"><span class="seg">${esc(s.seg)}</span>${esc(s.at)}<small>${esc(s.why)}</small></span>`).join('');
+  return `<div class="transfer ${leg.warn?'warn':''}">
+    <div class="t-head">🚗 Journée de transfert · <b>${esc(leg.drive||leg.time||'')}</b>${leg.warn?' · ⚠️ la plus grosse route du séjour':''}</div>
+    <div class="chain">
+      <span class="stop start">${esc(window.BASES[leg.from].name)}</span>
+      ${stops}
+      <span class="arr">→</span><span class="stop end">${esc(window.BASES[leg.to].name)}</span>
+    </div>
+    ${leg.note?`<div class="t-note">💡 ${esc(leg.note)}</div>`:''}
+  </div>`;
+}
 /* ---------- base block ---------- */
 function baseBlock(b,bi){
   const col=regionColor(b.region);
   const must=b.activities.filter(a=>a.must), opt=b.activities.filter(a=>!a.must);
   const cards=arr=>arr.map((a)=>actCard(a,bi,b.activities.indexOf(a),col)).join('');
   const leg=trip.legs[bi-1];
-  return `${leg?`<div style="text-align:center;color:#6b7e80;font-size:13.5px;margin:-8px 0 18px">🚗 ${esc(leg.via?('via '+leg.via):'')} · <b>${esc(leg.time)}</b>${leg.warn?' ⚠️ seul long trajet, à couper':''}</div>`:''}
+  return `${leg?legBlock(leg):''}
   <section class="base" id="base-${bi}">
     <div class="bhead"><img src="${b.hero}" alt="" referrerpolicy="no-referrer"><div class="scrim"></div>
       <div class="bh-in"><span class="nights">Base ${bi+1} · ${b.nights} nuit${b.nights>1?'s':''}</span>

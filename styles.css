@@ -95,6 +95,21 @@ svg#map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-act
 .menuhead h4{font-family:Georgia,serif;font-size:18px;margin:0}
 .menuhead span{font-size:12.5px;color:var(--slate)}
 
+/* ---- transfer block (leg between bases) ---- */
+.transfer{background:#fff;border:1px dashed var(--lands);border-radius:14px;padding:13px 15px;margin:-4px 0 22px}
+.transfer.warn{border-color:var(--warn);background:#fdf4ef}
+.t-head{font-size:13.5px;color:var(--slate);margin-bottom:9px}
+.t-head b{color:var(--ink)}
+.chain{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px}
+.chain .arr{align-self:center;color:var(--lands);font-weight:800}
+.chain .stop{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:12.5px;
+  font-weight:700;display:flex;flex-direction:column;line-height:1.25;max-width:165px}
+.chain .stop small{font-weight:400;color:var(--slate);font-size:11px;margin-top:1px}
+.chain .stop .seg{font-size:10px;color:var(--heather);font-weight:800;letter-spacing:.02em}
+.chain .stop.start,.chain .stop.end{background:var(--ink);color:#fff;justify-content:center;text-align:center}
+.t-note{margin-top:11px;font-size:13px;color:#7a5320;background:#faf3e3;border:1px solid #ecddb8;border-radius:9px;padding:9px 12px;line-height:1.45}
+.transfer.warn .t-note{color:#8a3c14;background:#fbeadf;border-color:#eac4ae}
+
 /* ---- activity cards ---- */
 .acts{display:grid;gap:14px;grid-template-columns:1fr;padding-bottom:16px}
 @media(min-width:620px){.acts{grid-template-columns:1fr 1fr}}
