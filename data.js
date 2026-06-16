@@ -11,8 +11,10 @@
    ========================================================================= */
 
 // --- images Wikimedia vérifiées (chargées quand il y a du réseau) ---
-// NB: on passe par l'endpoint Special:FilePath (redirection stable) ; les URL
-// directes upload.wikimedia.org sont bloquées par certains webviews.
+// On passe par l'endpoint Special:FilePath (redirection) plutôt que les URL
+// directes upload.wikimedia.org : FilePath ramène vers une taille valide
+// (les largeurs arbitraires sur le CDN renvoient 400) et ne limite pas le débit
+// pour un vrai navigateur. On dérive le nom de fichier depuis l'URL harvestée.
 function commons(u){
   const m=u.match(/\/thumb\/[^/]+\/[^/]+\/([^/]+)\//);
   return m? 'https://commons.wikimedia.org/wiki/Special:FilePath/'+m[1]+'?width=1024' : u;
