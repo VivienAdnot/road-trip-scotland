@@ -7,7 +7,7 @@ Philosophie : **peu de bases** (Audrey ne défait sa valise que 3-5 fois) mais *
 
 Site interactif publié via GitHub Pages : **https://vivienadnot.github.io/road-trip-scotland/**
 
-Page d'accueil → on choisit **le voyage court (7 nuits)** ou **le long (14 nuits)**. Chaque voyage a sa **carte par régions** (zones teintées + route + bases + activités) et ses **blocs-bases** : on dort dans quelques gros blocs, et chaque base propose un **menu d'activités dans un rayon de voiture**, marquées ★ « on veut le faire » ou simples options, avec **intensité** (🟢🟡🔴), durée et temps de route. On pioche selon l'énergie du jour.
+Page d'accueil → on choisit **le voyage court (8 nuits)** ou **le long (14 nuits)**. Chaque voyage a sa **carte par régions** (zones teintées + route + bases + activités) et ses **blocs-bases** : on dort dans quelques gros blocs, et chaque base propose un **menu d'activités dans un rayon de voiture**, marquées ★ « on veut le faire » ou simples options, avec **intensité** (🟢🟡🔴), durée et temps de route. On pioche selon l'énergie du jour.
 
 ## 📦 Contenu du dépôt
 - `index.html` — accueil (choix court / long).
@@ -30,37 +30,38 @@ Légende intensité : 🟢 tranquille · 🟡 actif · 🔴 grosse journée (rou
 
 ## ⚖️ Comparaison en un coup d'œil
 
-| Critère | **7 nuits** (1–8 août) | **14 nuits** (1–15 août) |
+| Critère | **8 nuits** (1–9 août) | **14 nuits** (1–15 août) |
 |---|---|---|
-| Bases (changements d'hôtel) | 4 bases · 3 transferts | 5 bases · 4 transferts |
+| Bases (changements d'hôtel) | 5 bases · 4 transferts | 5 bases · 4 transferts |
 | Régions couvertes | Lothians · Highlands (Glencoe, Skye) · Loch Lomond | + Trossachs · + **Cairngorms** |
-| Jours avec vraie route | 4 / 8 | 5 / 15 (mieux répartis) |
-| Belles randos possibles | ~1 | ~4–5 |
-| Journées « off » / légères | ~0 (ça enchaîne) | 2–3 intégrées |
-| Skye | compressé (~1,5 jour) | savouré (~3,5 jours) |
-| Rythme global | 🔴 soutenu — « l'essentiel, mais tu cours » | 🟡 équilibré — « tu en fais plus ET tu respires » |
+| Plus longue route d'affilée | **~2h45** (retour cassé par une nuit à Fort William) | ~2h45 |
+| Belles randos possibles | ~2 | ~4–5 |
+| Journées « off » / légères | ~1 | 2–3 intégrées |
+| Skye | compressé (~2 jours) | savouré (~3,5 jours) |
+| Rythme global | 🟡 actif — « l'essentiel, mais serein au volant » | 🟡 équilibré — « tu en fais plus ET tu respires » |
 | Exposition Fringe (prix) | quasi nulle (tout en pré-Fringe) | nulle si Édimbourg = 1–3 août |
 | Budget total | le plus bas | ~2× (mais meilleur ratio expérience/jour) |
-| Pour qui | test rapide, peu de congés | le vrai équilibre toi/Audrey |
+| Pour qui | congés comptés, mais un seul conducteur | le vrai équilibre toi/Audrey |
 
 ---
 
-## 🅰️ Scénario A — 7 nuits (1 → 8 août) · « L'essentiel, rythme soutenu »
+## 🅰️ Scénario A — 8 nuits (1 → 9 août) · « L'essentiel, serein au volant »
 
-**Bases :** Édimbourg 2 → Glencoe/Fort William 2 → Skye 2 → Loch Lomond 1
+**Bases :** Édimbourg 2 → Glencoe 2 → Skye 2 → **Fort William 1** → Loch Lomond 1
 
 | Jour | Matin | Après-midi | Soir | Route | Intensité |
 |---|---|---|---|---|---|
 | **J1 · 1/8** | Vol Paris → Édimbourg | Installation, Old Town à pied | Dîner, 1er pub | — | 🟢 |
 | **J2 · 2/8** | Château + Royal Mile tôt | Dean Village → Calton Hill, librairies | **Session trad** (Sandy Bell's) | à pied | 🟡 |
 | **J3 · 3/8** | Récup voiture → route via **Stirling** (déj + château) | Arrivée Glencoe, points de vue Three Sisters | Clachaig Inn | ~2h45 | 🟡 |
-| **J4 · 4/8** | **Rando Lost Valley** (Glencoe) | Glen Etive (route Skyfall) | B&B / resto local | court | 🔴 |
-| **J5 · 5/8** | Route → Skye (**Eilean Donan** en chemin) | Port de Portree, **Old Man of Storr** en soirée | Portree | ~2h45 | 🔴 |
+| **J4 · 4/8** | **Rando Lost Valley** (Glencoe) | Glen Etive (route Skyfall) | B&B / resto local | court | 🟡 |
+| **J5 · 5/8** | Route → Skye (**Eilean Donan** en chemin) | Port de Portree, **Old Man of Storr** en soirée | Portree | ~2h45 | 🟡 |
 | **J6 · 6/8** | **Quiraing** (matin) | Fairy Pools **ou** Neist Point + Talisker | The Old Inn (Carbost) | local | 🟡 |
-| **J7 · 7/8** | Route Skye → Loch Lomond (pause déj Glencoe) | Luss, bord du loch | Oak Tree Inn (Balmaha) | **~4h** (coupée) | 🔴 |
-| **J8 · 8/8** | Luss / Craigie Fort | Route aéroport → vol retour | — | ~1h | 🟢 |
+| **J7 · 7/8** | Route Skye → **Fort William** (Eilean Donan, Glen Shiel) | Steall Falls (Glen Nevis) | Ben Nevis Inn | ~2h45 | 🟡 |
+| **J8 · 8/8** | Route Fort William → Loch Lomond (Glencoe, Rannoch Moor) | Luss, bord du loch | Oak Tree Inn (Balmaha) | ~1h30 | 🟢 |
+| **J9 · 9/8** | Luss / Ben A'an | Route aéroport (**Glasgow ~45 min**) → vol | — | ~45 min | 🟢 |
 
-**Ressenti :** tu vois les plus beaux morceaux, mais Skye est expédié et il y a 4 journées « route ». Peu de place pour l'imprévu. Parfait si tu as peu de jours ; frustrant si tu veux flâner.
+**Ressenti :** tu vois les plus beaux morceaux et tu restes serein au volant — aucun trajet ne dépasse ~2h45, grâce à la nuit-étape à Fort William qui casse le retour de Skye. Skye reste un peu compressé (~2 j) ; pour le savourer, c'est le voyage long.
 
 ---
 
@@ -92,10 +93,10 @@ Légende intensité : 🟢 tranquille · 🟡 actif · 🔴 grosse journée (rou
 
 ## ✅ Verdict
 
-- **7 nuits** = excellent « best of » si le temps manque, mais road trip *rapide* : tu coches, tu ne savoures pas, et Skye mérite mieux.
+- **8 nuits** = excellent « best of » sans stress au volant (la nuit-étape à Fort William casse le retour de Skye, aucun trajet > ~2h45). Skye reste un peu compressé et il y a moins de place pour l'imprévu.
 - **14 nuits** = le vrai point d'équilibre : **densité d'activités élevée pour toi** (randos, sites, Cairngorms) **et peu de changements d'hôtel pour Audrey**, avec des respirations.
 
-**Reco :** si les deux semaines sont possibles, le scénario B est nettement supérieur. Le 7 nuits ne se justifie que si congés/budget coincent.
+**Reco :** si les deux semaines sont possibles, le scénario B est nettement supérieur. Le 8 nuits ne se justifie que si congés/budget coincent — mais il reste confortable pour un conducteur unique.
 
 ## 📌 Décider sur du concret
 Le choix se joue surtout sur **vols + prix Édimbourg (pré/pendant Fringe)**. Brancher **Booking.com + Kiwi.com** → chiffres réels (hébergement par base, fourchette/nuit, vols Paris↔Écosse début août) pour trancher sur données.

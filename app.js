@@ -14,8 +14,8 @@ const bases=trip.bases.map(b=>Object.assign({},window.BASES[b.base],{id:b.base,n
 function nav(){
   return `<nav class="nav"><div class="wrap">
     <a class="brand" href="index.html"><span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>Road trip Écosse</a>
-    <a class="tab ${trip.id==='short'?'active':''}" href="short.html">Court · 7 n</a>
-    <a class="tab ${trip.id==='long'?'active':''}" href="long.html">Long · 14 n</a>
+    <a class="tab ${trip.id==='short'?'active':''}" href="short.html">Court · ${window.TRIPS.short.nights} n</a>
+    <a class="tab ${trip.id==='long'?'active':''}" href="long.html">Long · ${window.TRIPS.long.nights} n</a>
   </div></nav>`;
 }
 /* ---------- hero ---------- */

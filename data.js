@@ -162,6 +162,25 @@ const BASES = {
     ]
   },
 
+  fortwilliam: {
+    name:'Fort William', region:'highlands', lat:56.8198, lng:-5.1052,
+    hero:'img/site-viaduc-de-glenfinnan.jpg',
+    tag:'Halte d’une nuit · pour casser la route du retour',
+    blurb:"Une nuit d'étape sur le chemin du retour de Skye, pour couper le long trajet (jamais plus de ~2h45 au volant). Fort William est la « capitale outdoor » des Highlands, au pied du Ben Nevis : pratique pour souffler, dîner et attraper ce qu'on n'a pas eu le temps de voir depuis Glencoe.",
+    lodging:"Une nuit à Fort William (ou Glen Nevis). Ben Nevis Inn pour le dîner.",
+    radius:"Tout à ≤ 40 min : Glen Nevis, télécabine, Glenfinnan (vers l'ouest).",
+    activities:[
+      {name:'Steall Falls (Glen Nevis)', type:'rando', lat:56.7700, lng:-4.9700, drive:15, intensity:2, time:'1h30-2h', must:true, img:W.steall,
+       desc:"En arrivant ou le lendemain matin : sentier de gorge le long de la rivière jusqu'à une cascade de 120 m et sa prairie suspendue. Très Tolkien, et juste à côté de la base.", tip:"Parfait pour se dégourdir après la route depuis Skye."},
+      {name:'Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:35, intensity:2, time:'demi-journée', must:false, img:'img/site-viaduc-de-glenfinnan.jpg',
+       desc:"Le viaduc d'Harry Potter, à 35 min vers l'ouest. Si tu ne l'as pas fait depuis Glencoe et que tu pars tôt : le Jacobite passe vers 11h.", tip:"Détour vers l'ouest (sens opposé au retour) — seulement si le timing colle."},
+      {name:'Télécabine Nevis Range', type:'vue', lat:56.8200, lng:-5.0080, drive:10, intensity:1, time:'demi-journée', must:false, img:W.nevisRange,
+       desc:"Altitude facile au-dessus de Fort William : vue sur le Ben Nevis sans suer. Bon plan si la météo est correcte en arrivant."},
+      {name:'Fort William (ville) & Ben Nevis Inn', type:'pub', lat:56.8198, lng:-5.1052, drive:0, intensity:1, time:'soirée', must:false, img:'',
+       desc:"High Street piétonne pour les courses et le dîner ; Ben Nevis Inn (pub au pied de la montagne) pour la soirée. Halte tranquille avant la dernière ligne droite."}
+    ]
+  },
+
   skye: {
     name:'Isle of Skye', region:'skye', lat:57.4125, lng:-6.1956,
     hero:'img/stage-isle-of-skye.jpg',
@@ -218,17 +237,18 @@ const BASES = {
    ========================================================================= */
 const TRIPS = {
   short: {
-    id:'short', label:'Court', nights:7, days:8, dates:'1 → 8 août',
-    title:'7 nuits · l’essentiel',
-    tagline:"Le best-of en une semaine : Édimbourg, Glencoe, Skye, Loch Lomond. Rythme soutenu — on coche les incontournables.",
-    intensity:'🔴 soutenu',
+    id:'short', label:'Court', nights:8, days:9, dates:'1 → 9 août',
+    title:'8 nuits · l’essentiel',
+    tagline:"Le best-of : Édimbourg, Glencoe, Skye, Loch Lomond — avec une nuit-étape à Fort William pour casser le retour. Aucun trajet ne dépasse ~2h45.",
+    intensity:'🟡 actif',
     hero:'img/stage-isle-of-skye.jpg',
-    note:"Idéal si les congés sont comptés. Skye est un peu compressé (~1,5 j) et il y a 4 journées avec de la route. Peu de place pour l'imprévu.",
+    note:"Idéal si les congés sont comptés mais qu'on veut rester serein au volant (un seul conducteur). 5 bases, 4 transferts, jamais plus de ~2h45 de route d'affilée. Skye reste un peu compressé (~2 j) ; pour le savourer, c'est le voyage long.",
     bases:[
-      {base:'edinburgh', nights:2},
-      {base:'glencoe',   nights:2},
-      {base:'skye',      nights:2},
-      {base:'lomond',    nights:1}
+      {base:'edinburgh',   nights:2},
+      {base:'glencoe',     nights:2},
+      {base:'skye',        nights:2},
+      {base:'fortwilliam', nights:1},
+      {base:'lomond',      nights:1}
     ],
     legs:[
       {from:'edinburgh', to:'glencoe', via:'Stirling', drive:'~2h45 de conduite',
@@ -242,13 +262,17 @@ const TRIPS = {
          {at:'Eilean Donan', seg:'1h45', why:'le château sur son îlot — arrêt culte'},
          {at:'Sligachan', seg:'1h', why:'vue sur les Cuillin avant Portree'}
        ]},
-      {from:'skye', to:'lomond', via:'Eilean Donan · Fort William · Glencoe', drive:'~4h de conduite', warn:true,
-       note:"Le seul vrai long trajet du court séjour, et tu es seul au volant. Découpé en segments courts (jamais plus d'~1h30), ça devient l'une des plus belles routes d'Écosse — mais c'est une journée entière, pas un sprint : pars tôt. Le lendemain, Loch Lomond → aéroport de Glasgow ne fait que ~45 min. Option plus douce si ça pèse : ajouter une nuit à Fort William/Glencoe (→ 8 nuits).",
+      {from:'skye', to:'fortwilliam', via:'Eilean Donan', drive:'~2h45 de conduite',
        stops:[
-         {at:'Eilean Donan', seg:'1h', why:'café, château sur l’eau'},
-         {at:'Fort William', seg:'1h15', why:'déjeuner, plein d’essence'},
-         {at:'Glencoe (Three Sisters)', seg:'30 min', why:'belvédère, se dégourdir'},
-         {at:'Rannoch Moor → Loch Lomond', seg:'1h30', why:'paysages, arrivée tranquille'}
+         {at:'Sligachan', seg:'30 min', why:'dernier regard sur les Cuillin'},
+         {at:'Eilean Donan', seg:'45 min', why:'le château sur l’eau'},
+         {at:'Glen Shiel → Fort William', seg:'1h30', why:'vallée spectaculaire, arrivée'}
+       ]},
+      {from:'fortwilliam', to:'lomond', via:'Glencoe · Rannoch Moor', drive:'~1h30 de conduite',
+       stops:[
+         {at:'Glencoe (Three Sisters)', seg:'30 min', why:'on retraverse la vallée'},
+         {at:'Rannoch Moor', seg:'20 min', why:'le grand vide'},
+         {at:'Tyndrum → Loch Lomond', seg:'45 min', why:'arrivée tranquille (J+1 : Glasgow ~45 min)'}
        ]}
     ]
   },
