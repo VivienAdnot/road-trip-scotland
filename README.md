@@ -3,15 +3,22 @@
 Projet de voyage d'un couple (toi + Audrey), départ Paris, **~1er août 2026**, en **voiture + B&B**.
 Philosophie : **peu de bases** (Audrey ne défait sa valise que 3-5 fois) mais **journées bien remplies** (toi tu ne t'ennuies pas). Édimbourg calée **avant le 7 août** → ville calme + prix normaux (le Fringe 2026 court du 7 au 31), et la quinzaine du festival se vit dans les Highlands.
 
-## 🗺️ Voir la carte
+## 🗺️ Voir le site
 
-Carte interactive publiée via GitHub Pages : **https://vivienadnot.github.io/road-trip-scotland/**
-(s'ouvre aussi hors-ligne en ouvrant `index.html` dans un navigateur.)
+Site interactif publié via GitHub Pages : **https://vivienadnot.github.io/road-trip-scotland/**
+
+Page d'accueil → on choisit **le voyage court (7 nuits)** ou **le long (14 nuits)**. Chaque voyage a sa **carte par régions** (zones teintées + route + bases + activités) et ses **blocs-bases** : on dort dans quelques gros blocs, et chaque base propose un **menu d'activités dans un rayon de voiture**, marquées ★ « on veut le faire » ou simples options, avec **intensité** (🟢🟡🔴), durée et temps de route. On pioche selon l'énergie du jour.
 
 ## 📦 Contenu du dépôt
-- `index.html` — carte interactive autonome (SVG dessiné, photos incrustées, fiches par étape). C'est aussi la page servie par GitHub Pages.
-- `pictures/` — les 10 photos pleine résolution (Wikimedia Commons, CC/CC0 — créditer les auteurs si publication).
-- `HANDOFF.md` — brief technique pour reprendre/étendre dans Claude Code (archi, modèle de données, contraintes, recettes de build).
+- `index.html` — accueil (choix court / long).
+- `short.html` · `long.html` — les deux voyages (mêmes briques, nuits et régions différentes).
+- `data.js` — le contenu : régions, bibliothèque de bases, menus d'activités, photos.
+- `map.js` — carte SVG dessinée (contour Écosse + teintes régions + bases + activités, pan/zoom).
+- `geo.js` — géométrie du contour (projection + chemins), extraite de la carte d'origine.
+- `app.js` · `styles.css` — rendu des pages et style (éditorial, type VisitScotland).
+- `img/` — photos « héros » locales (offline-safe). Les photos d'appoint viennent de Wikimedia Commons (chargées en ligne via `Special:FilePath`).
+- `pictures/` — les photos sources pleine résolution (Wikimedia Commons, CC/CC0 — créditer les auteurs si publication).
+- `HANDOFF.md` — brief technique d'origine (archi de la carte, contraintes, recettes de build).
 - `README.md` — ce fichier : le planning et la décision 7 vs 14 nuits.
 
 ## 🧭 Itinéraire de base (Écosse)
