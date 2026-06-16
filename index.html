@@ -230,15 +230,18 @@ function init(){setAspect();applyView();}
 window.addEventListener('resize',()=>{setAspect();applyView();});
 
 const pts=new Map();let dragged=false,startVB=null,startMid=null,startDist=0,startPx=null;
-svg.addEventListener('pointerdown',e=>{svg.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.clientX,y:e.clientY});dragged=false;
+svg.addEventListener('pointerdown',e=>{pts.set(e.pointerId,{x:e.clientX,y:e.clientY});dragged=false;
  if(pts.size===1){startVB={...vb};startPx={x:e.clientX,y:e.clientY};}
- if(pts.size===2){const a=[...pts.values()];startVB={...vb};startDist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);startMid={x:(a[0].x+a[1].x)/2,y:(a[0].y+a[1].y)/2};}});
+ if(pts.size===2){const a=[...pts.values()];startVB={...vb};startDist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);startMid={x:(a[0].x+a[1].x)/2,y:(a[0].y+a[1].y)/2};
+   pts.forEach((p,id)=>{try{svg.setPointerCapture(id);}catch(_){}});}});
 svg.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});const r=rect();
  if(pts.size===2&&startVB){const a=[...pts.values()];const dist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);let f=startDist/dist;
    let nw=Math.min(MAXW,Math.max(MINW,startVB.w*f));f=nw/startVB.w;
    const fx=startVB.x+(startMid.x-r.left)/r.width*startVB.w,fy=startVB.y+(startMid.y-r.top)/r.height*startVB.h;
    vb.w=nw;vb.h=startVB.h*f;vb.x=fx-(startMid.x-r.left)/r.width*vb.w;vb.y=fy-(startMid.y-r.top)/r.height*vb.h;dragged=true;applyView();}
- else if(pts.size===1&&startVB){const dx=e.clientX-startPx.x,dy=e.clientY-startPx.y;if(Math.abs(dx)+Math.abs(dy)>4)dragged=true;
+ else if(pts.size===1&&startVB){const dx=e.clientX-startPx.x,dy=e.clientY-startPx.y;
+   if(Math.abs(dx)+Math.abs(dy)>4){if(!dragged){try{svg.setPointerCapture(e.pointerId);}catch(_){}}dragged=true;}
+   if(!dragged)return;
    const upp=startVB.w/r.width;vb.x=startVB.x-dx*upp;vb.y=startVB.y-dy*upp;applyView();}});
 function up(e){if(pts.has(e.pointerId))pts.delete(e.pointerId);if(pts.size===1){const p=[...pts.values()][0];startVB={...vb};startPx={x:p.x,y:p.y};}}
 svg.addEventListener('pointerup',up);svg.addEventListener('pointercancel',up);
