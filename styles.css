@@ -154,6 +154,73 @@ svg#map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-act
 #sheet .sh-body p{color:var(--slate);margin:0 0 10px}
 #sheet .tip{background:#eef4ef;border-left:3px solid var(--green);padding:9px 12px;border-radius:8px;font-size:13.5px;color:#2f4a3b}
 
+/* ---- budget page ---- */
+.budgrid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:720px){.budgrid{grid-template-columns:1fr 1fr}}
+.bigcard{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);color:#fff;min-height:210px;
+  display:flex;align-items:flex-end;text-decoration:none}
+.bigcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.bigcard:hover img{transform:scale(1.04)}
+.bigcard .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,30,.12),rgba(20,30,30,.86))}
+.bigcard .bc-in{position:relative;z-index:2;padding:20px;width:100%}
+.bigcard .bc-in .lab{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;opacity:.92}
+.bigcard .bc-in h3{font-size:23px;color:#fff;margin:2px 0 4px}
+.bigcard .bc-in .tot{font-family:Georgia,serif;font-size:34px;font-weight:700;line-height:1}
+.bigcard .bc-in .pp{font-size:13.5px;opacity:.9;margin-top:4px}
+.bigcard .bc-in .go{display:inline-block;margin-top:12px;background:var(--gold);color:#22343a;font-weight:700;
+  padding:7px 14px;border-radius:22px;font-size:13.5px}
+
+/* cost breakdown table */
+.costtable{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:14.5px}
+.costtable th,.costtable td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.costtable thead th{background:var(--ink);color:var(--cream);font-family:Georgia,serif;font-weight:600;font-size:14px}
+.costtable td.num,.costtable th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.costtable tbody tr:last-child td{border-bottom:none}
+.costtable tr.total td{background:var(--cream);font-weight:800;font-size:16px}
+.costtable tr.total td .pp{display:block;font-weight:500;font-size:12px;color:var(--slate)}
+.costtable .pill-mini{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:12px;
+  background:var(--cream);border:1px solid var(--line);color:var(--slate);margin-left:6px}
+
+/* hotel cards */
+.hotelgroup{margin:0 0 26px}
+.hotelgroup .hg-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 12px;
+  padding-bottom:7px;border-bottom:2px solid var(--line)}
+.hotelgroup .hg-head h4{font-family:Georgia,serif;font-size:20px;margin:0}
+.hotelgroup .hg-head .dates{font-size:13px;color:var(--slate);font-weight:600}
+.hotelgroup .hg-head .avg{margin-left:auto;font-size:13.5px;font-weight:800;color:var(--ink);
+  background:var(--cream);border:1px solid var(--line);padding:3px 11px;border-radius:20px}
+.badge-avail{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:14px}
+.badge-avail.ok{background:#e7f1ea;border:1px solid #bcd9c7;color:#356b4d}
+.badge-avail.tight{background:#fbf2dd;border:1px solid #e6d09a;color:#8a6a16}
+.badge-avail.gone{background:#f7e3da;border:1px solid #e3b39c;color:#a3441b}
+.hotels{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:620px){.hotels{grid-template-columns:1fr 1fr}}
+@media(min-width:920px){.hotels{grid-template-columns:1fr 1fr 1fr}}
+.hotel{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column;
+  box-shadow:0 4px 14px rgba(20,30,30,.07);transition:transform .15s,box-shadow .15s}
+a.hotel:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,30,30,.15)}
+.hotel .ph{position:relative;aspect-ratio:16/10;background:linear-gradient(150deg,var(--skyblue),var(--slate));overflow:hidden}
+.hotel .ph img{width:100%;height:100%;object-fit:cover}
+.hotel .ph.noimg::after{content:"🛏️";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:38px;opacity:.55}
+.hotel .ph .price{position:absolute;bottom:8px;right:8px;background:rgba(20,30,30,.82);color:#fff;font-weight:800;
+  font-size:13px;padding:4px 10px;border-radius:18px}
+.hotel .ph .price small{font-weight:500;opacity:.85}
+.hotel .ph .stars{position:absolute;top:8px;left:8px;background:var(--gold);color:#22343a;font-weight:800;
+  font-size:11px;padding:2px 8px;border-radius:14px}
+.hotel .hc{padding:11px 13px 13px;display:flex;flex-direction:column;gap:5px;flex:1}
+.hotel .hc h5{font-family:Georgia,serif;font-size:15.5px;margin:0;line-height:1.2;color:var(--ink)}
+.hotel .hc .loc{font-size:12.5px;color:var(--slate)}
+.hotel .hc .book{margin-top:auto;font-size:12.5px;font-weight:700;color:var(--heather);padding-top:6px}
+.note-box{background:#faf3e3;border:1px solid #ecddb8;border-radius:12px;padding:13px 16px;color:#7a5320;
+  font-size:14px;line-height:1.5;margin:0 0 22px}
+.note-box.alert{background:#fbeadf;border-color:#eac4ae;color:#8a3c14}
+.note-box b{color:inherit}
+.leverlist{list-style:none;padding:0;margin:8px 0 0}
+.leverlist li{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;
+  font-size:14px;color:var(--slate)}
+.leverlist li b{color:var(--ink)}
+
 /* ---- footer ---- */
 footer{background:var(--ink);color:#cdd8d6;font-size:13px;padding:26px 0 34px}
 footer a{color:#e7d9b0}

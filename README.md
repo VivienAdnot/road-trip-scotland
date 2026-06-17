@@ -40,7 +40,7 @@ Légende intensité : 🟢 tranquille · 🟡 actif · 🔴 grosse journée (rou
 | Skye | compressé (~2 jours) | savouré (~3,5 jours) |
 | Rythme global | 🟡 actif — « l'essentiel, mais serein au volant » | 🟡 équilibré — « tu en fais plus ET tu respires » |
 | Exposition Fringe (prix) | quasi nulle (tout en pré-Fringe) | nulle si Édimbourg = 1–3 août |
-| Budget total | le plus bas | ~2× (mais meilleur ratio expérience/jour) |
+| Budget total (couple) | **≈ €4 700–5 300** | **≈ €6 300–7 200** (~+35 %, pas ×2) |
 | Pour qui | congés comptés, mais un seul conducteur | le vrai équilibre toi/Audrey |
 
 ---
@@ -98,8 +98,62 @@ Légende intensité : 🟢 tranquille · 🟡 actif · 🔴 grosse journée (rou
 
 **Reco :** si les deux semaines sont possibles, le scénario B est nettement supérieur. Le 8 nuits ne se justifie que si congés/budget coincent — mais il reste confortable pour un conducteur unique.
 
+---
+
+## 💷 Budget estimatif (couple, EUR)
+
+**Prix réels relevés le 17 juin 2026**, pour un départ début août — donc à **~7 semaines**, quasi fermes (pas des projections lointaines). Sources : **Kiwi + Expedia** (vols), **Booking + Tripadvisor** (hébergement, moyenne de plusieurs établissements réellement dispo aux dates exactes), agrégateurs voiture (KAYAK, Arnold Clark, Enterprise…). Tout pour **2 personnes**, livre→euro ≈ 1,17.
+
+### Vols Paris ↔ Écosse — 2 personnes
+- **Court (1→9 août), open-jaw EDI in / GLA out** : **~€692 tout en direct** (Air France CDG→EDI ~€280/pers + easyJet GLA→Paris ~€66/pers), moyenne réaliste **~€740**. L'open-jaw bat l'aller-retour grâce au vol GLA→Paris du 9/8 très bon marché.
+- **Long (1→15 août), aller-retour direct EDI** : **dès €538** (Air France direct A/R), moyenne ~€640 pour des horaires de retour corrects (le tarif plancher est un retour à 05h40).
+- Direct CDG–EDI ≈ 1h45–2h. ⚠️ **bagage en soute en option** : AF basic n'inclut pas le bagage cabine, soute €69–138/trajet ; easyJet inclut le cabine, soute ~€64. Compter **+€130–260 pour 2** si bagages en soute A/R.
+
+### Hébergement — €/nuit RÉEL pour 2 (moyenne Booking aux dates exactes)
+| Zone | Dates | €/nuit moyen | Dispo |
+|---|---|---|---|
+| Édimbourg centre | 1–3/8 | **€259** | abondante (3★ dès ~€224) |
+| Glencoe / Ballachulish | 3–5/8 | **€287** | 🟠 **rare** — milieu de gamme presque épuisé, surtout des lodges de luxe |
+| **Isle of Skye (Portree)** | **5–7/8** | **€612** | 🔴 **quasi sold-out** — un seul milieu de gamme (Redwood House) ; sinon hôtels 4★ à ~€1 000+ |
+| Fort William | 7–8/8 | **€236** | bonne |
+| Loch Lomond (Balloch) | 8–9/8 | **€201** | bonne (B&B dès ~€110) |
+| *Skye (fenêtre du long)* | *9–13/8* | *€278* | *très rare mais nettement moins cher qu'au 5–7/8* |
+| Cairngorms / Aviemore | 13–15/8 | **€266** | correcte |
+
+→ **Total hébergement réel** : **Court ≈ €2 753** (Édim 2×259 + Glencoe 2×287 + Skye 2×612 + FW 236 + Lomond 201) · **Long ≈ €3 670** (Édim 3×259 + Lomond 201 + Glencoe/FW 4×262 + Skye 4×278 + Cairngorms 2×266).
+
+### Voiture de location + carburant
+Intermédiaire **manuelle**, prise EDI → rendue GLA. **Frais d'open-jaw EDI→GLA = €0** chez les grands loueurs (Enterprise/Avis/Europcar/Hertz — les 2 aéroports sont dans leur réseau) ; Arnold Clark facture ~€50–60 malgré un tarif/jour plus bas → **prendre un grand loueur**. Boîte auto rare : +~€110 court / +~€200 long. Carburant ~£1,45/L, ~7 L/100 km.
+- **Court (8 j, ~1 100 km)** : voiture ~€485 (≈£48/j) + carburant ~€131 ≈ **~€615**
+- **Long (14 j, ~1 800 km)** : voiture ~€770 (≈£45/j) + carburant ~€214 ≈ **~€986**
+
+### Repas + activités (par couple)
+B&B = petit-déj souvent inclus. Dîner pub à 2 ~€44 · déj café ~€27 · entrées (château Édimbourg ~€23/pers, distillerie ~€15–25/pers, sites National Trust ~€15/pers ; **Historic Scotland Explorer Pass** £45/pers rentable dès 3 sites).
+- **Sobre ~€75/j** · **Confortable ~€120/j**
+- Court : **~€600** (sobre) → **~€960** (confort) · Long : **~€1 050** → **~€1 680**
+
+### 🧮 Total estimé (couple) — prix réels au 17/6
+| Poste | **Court · 8 nuits** | **Long · 14 nuits** |
+|---|---|---|
+| Vols (2 pers., direct) | €692–740 | €538–640 |
+| Voiture + carburant | ~€615 | ~€986 |
+| Hébergement (réel) | ~€2 753 | ~€3 670 |
+| Repas + activités | €600–960 | €1 050–1 680 |
+| Bagages soute (si A/R) | +€130–260 | +€130–260 |
+| **TOTAL couple** | **≈ €4 700 – 5 300** | **≈ €6 300 – 7 200** |
+| **Par personne** | **≈ €2 350 – 2 650** | **≈ €3 150 – 3 600** |
+
+**À retenir (chiffres réels) :**
+- Le **long ne coûte que ~+35 %**, pas le double ni +70 % : aux vraies dates, Skye 9–13/8 (€278/nuit) est **deux fois moins cher** que Skye 5–7/8 du court (€612/nuit), ce qui resserre l'écart.
+- 🔴 **Skye 5–7/8 est le point noir** : quasi sold-out en milieu de gamme, un seul établissement à €612/nuit. À elle seule, cette étape pèse ~€1 224 sur le court. **Levier n°1 : réserver Skye immédiatement**, ou décaler d'1–2 jours, ou loger hors île.
+- 🟠 **Glencoe 3–5/8** est le 2ᵉ point de tension (milieu de gamme presque épuisé) — bloquer Loch Leven / Inn at Ardgour / Onich maintenant.
+- **Édimbourg, Fort William, Loch Lomond, Aviemore** restent dispo et raisonnables — réservables plus tard.
+- **Vols** : open-jaw direct ~€692 sur le court ; A/R direct dès €538 sur le long. Prendre les bagages soute en option si besoin.
+
+---
+
 ## 📌 Décider sur du concret
-Le choix se joue surtout sur **vols + prix Édimbourg (pré/pendant Fringe)**. Brancher **Booking.com + Kiwi.com** → chiffres réels (hébergement par base, fourchette/nuit, vols Paris↔Écosse début août) pour trancher sur données.
+Au 17 juin, les chiffres ci-dessus sont **des prix réellement réservables**, pas des ordres de grandeur. Deux actions urgentes, dans l'ordre : **(1) verrouiller Skye** (5–7/8 quasi parti — c'est le poste qui peut faire dérailler le court), **(2) verrouiller Glencoe** (3–5/8 milieu de gamme presque épuisé). Les vols et les autres bases peuvent attendre un peu.
 
 ## 🔜 À régler ensuite
 - Si l'Écosse démarre le 1er août → **rebat les cartes côté Irlande** et le vol Dublin→Édimbourg. À caler une fois la durée Écosse fixée.
