@@ -31,7 +31,7 @@ const STAYS=[
     pois:[['Three Sisters (Glen Coe)','30 min'],['Steall Falls (Glen Nevis)','15 min'],['Viaduc de Glenfinnan','25 min'],['Lost Valley','30 min']],
     alts:'B&B avec petit-déj : Inverlochy Villas €201 (4.1). Central : Imperial €214. Cheap : Ossians €159. Côté est : Nevis Pod, Kinlochleven ~25 min, €225.',
     note:'Glencoe village/Ballachulish quasi complets — Fort William concentre l’offre, à 30 min des sites. −30 %.',
-    url:'https://www.booking.com/searchresults.html?ss=Waterfront+Lodge+Fort+William&checkin=2026-08-03&checkout=2026-08-05&group_adults=2&no_rooms=1&selected_currency=EUR'
+    url:'https://www.booking.com/hotel/gb/waterfront-lodge-only-accommodation.html?checkin=2026-08-03&checkout=2026-08-05&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'skye', lat:57.281, lng:-5.714, star:true,
@@ -40,7 +40,7 @@ const STAYS=[
     pois:[['Château d’Eilean Donan','15 min'],['Sligachan / Cuillin','45 min'],['Old Man of Storr','~55 min'],['Quiraing','~1h10']],
     alts:'Long (9–13/8) : Plockton Hotel €256 (à 20 min, village waterfront très scénique). Sur l’île : Dunollie, Broadford €217 (chambres datées).',
     note:'Le plus gros coup du séjour : évite les ~€612/nuit de Portree → −€792 sur 2 nuits pour ~50 min de route le matin.',
-    url:'https://www.booking.com/searchresults.html?ss=Skye+Bridge+Hotel+Kyle+of+Lochalsh&checkin=2026-08-05&checkout=2026-08-07&group_adults=2&no_rooms=1&selected_currency=EUR'
+    url:'https://www.booking.com/hotel/gb/the-skye-bridge.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'cairngorms', lat:57.19, lng:-3.83, star:false,
