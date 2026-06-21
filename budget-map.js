@@ -34,13 +34,13 @@ const STAYS=[
     url:'https://www.booking.com/hotel/gb/ossians.html?checkin=2026-08-03&checkout=2026-08-05&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'skye', lat:57.281, lng:-5.714, star:false,
-    area:'Isle of Skye — Kyle of Lochalsh', best:'The Lochalsh Hotel',
-    price:583, window:'5–7/8 (court)', rating:'8.5/10', hero:'img/stage-isle-of-skye.jpg',
-    pois:[['Château d’Eilean Donan','15 min'],['Sligachan / Cuillin','45 min'],['Old Man of Storr','~55 min'],['Quiraing','~1h10']],
-    alts:'⚠️ L’option pas chère (Skye Bridge ~€216) est COMPLÈTE au 5–7/8 — il ne reste que Lochalsh Hotel €583. Pistes : Broadford/Dunollie (sur l’île, à vérifier), décaler d’1–2 jours, ou dormir dans le van cette nuit-là.',
-    note:'Le point noir du court aux dates exactes (dispo vérifiée 21/6). C’est LA nuit où le van se justifie — voir la page Mix.',
-    url:'https://www.booking.com/hotel/gb/lochalsh.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'highlands', lat:57.144, lng:-4.679, star:false,
+    area:'Base Skye (≤€250) — Fort Augustus', best:'Appin House B&B',
+    price:184, window:'5–7/8 (court)', rating:'8.4/10', hero:'img/stage-isle-of-skye.jpg',
+    pois:[['Loch Ness (sur place)','5 min'],['Château d’Eilean Donan','~50 min'],['Pont de Skye','~1h05'],['Old Man of Storr / Portree','~1h45']],
+    alts:'⚠️ Sous €250, RIEN près de Skye : tout le corridor Kyleakin→Lochcarron (hôtels, B&B, cabanes, gîtes) est complet en août. Le seul ≤€250 est ici, à Fort Augustus, sud du Loch Ness. Plus près mais hors budget : Plockton Inn €368 (~1h15 des sites), Lochalsh Hotel €583 (5 min du pont).',
+    note:'Plafond €250 oblige : on dort à Fort Augustus et on monte sur Skye à la journée (~1h45). Gros compromis route — si tu peux pousser à ~€370, Plockton réduit la route de moitié.',
+    url:'https://www.booking.com/hotel/gb/appin-house.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'cairngorms', lat:57.19, lng:-3.83, star:false,
