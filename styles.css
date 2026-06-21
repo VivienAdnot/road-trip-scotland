@@ -169,6 +169,8 @@ svg#map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-act
 /* ---- budget page ---- */
 .budgrid{display:grid;gap:18px;grid-template-columns:1fr}
 @media(min-width:720px){.budgrid{grid-template-columns:1fr 1fr}}
+@media(min-width:720px){.budgrid-3{grid-template-columns:1fr 1fr 1fr}}
+.budgrid-3 .bigcard{min-height:180px}
 .bigcard{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);color:#fff;min-height:210px;
   display:flex;align-items:flex-end;text-decoration:none}
 .bigcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}

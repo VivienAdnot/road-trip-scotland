@@ -8,48 +8,48 @@ const SVG='http://www.w3.org/2000/svg';
 const STAYS=[
   {
     region:'lothians', lat:55.945, lng:-3.218, star:false,
-    area:'Édimbourg — centre / West End', best:'Point A Hotel Haymarket',
-    price:238, window:'1–3/8', rating:'4.4/5', hero:'img/stage-dimbourg.jpg',
-    pois:[['Château + Royal Mile','≤15 min à pied'],['Arthur’s Seat','12 min'],['Calton Hill','10 min'],['Dean Village','10 min']],
-    alts:'Autres : Hampton by Hilton West End €250 · ibis South Bridge €266.',
-    note:'À caler avant le 7/8 : le festival Fringe fait flamber les prix ensuite.',
-    url:'https://www.booking.com/hotel/gb/point-a-edinburgh.html?checkin=2026-08-01&checkout=2026-08-03&no_rooms=1&group_adults=2&selected_currency=EUR'
+    area:'Édimbourg — Newington', best:'Bala House',
+    price:173, window:'1–3/8', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
+    pois:[['Château + Royal Mile','~20 min à pied'],['Arthur’s Seat','12 min'],['Calton Hill','10 min'],['Dean Village','12 min']],
+    alts:'Dispo aussi : Arrandale €191 (8.0, parking) · central 4★ Moxy €228. Leg le plus cher (Fringe) — réserver en premier.',
+    note:'Dispo réelle vérifiée le 21/6 aux dates. Guesthouse 3★, parking gratuit.',
+    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-01&checkout=2026-08-03&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'trossachs', lat:56.00, lng:-4.58, star:false,
+    region:'trossachs', lat:56.00, lng:-4.58, star:true,
     area:'Loch Lomond — Balloch', best:'Glenfern Guest House',
-    price:98, window:'8–9/8', rating:'4.3/5', hero:'img/stage-loch-lomond-glasgow.jpg',
+    price:98, window:'8–9/8', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
     pois:[['Luss & rive du loch','12 min'],['Conic Hill / Balmaha','15 min'],['Ben A’an','35 min'],['Loch Katrine (vapeur)','40 min']],
-    alts:'Le moins cher du séjour (petit-déj non inclus, avis partagés). Plus sûr : Loch Lomond Hotel €225 · Tullie Inn €244.',
-    note:'Dispo correcte — réservable un peu plus tard que Skye/Glencoe.',
+    alts:'Le meilleur prix du séjour. Dispo aussi : Norwood €127 (8.6) · Loch Lomond Hotel €203.',
+    note:'Dispo réelle vérifiée le 21/6. 3★, parking gratuit, adultes uniquement.',
     url:'https://www.booking.com/hotel/gb/glenfern-guest-house.html?checkin=2026-08-08&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'highlands', lat:56.82, lng:-5.105, star:false,
-    area:'Glencoe & Lochaber — base à Fort William', best:'Waterfront Lodge',
-    price:202, window:'3–5/8 (Glencoe) · 7–8/8 (Fort William)', rating:'7.7/10', hero:'img/stage-glencoe-highlands.jpg',
+    area:'Glencoe & Lochaber — base à Fort William', best:'Ossians',
+    price:159, window:'3–5/8 (Glencoe) · 7–8/8 retour €202', rating:'n/a', hero:'img/stage-glencoe-highlands.jpg',
     pois:[['Three Sisters (Glen Coe)','30 min'],['Steall Falls (Glen Nevis)','15 min'],['Viaduc de Glenfinnan','25 min'],['Lost Valley','30 min']],
-    alts:'B&B avec petit-déj : Inverlochy Villas €201 (4.1). Central : Imperial €214. Cheap : Ossians €159. Côté est : Nevis Pod, Kinlochleven ~25 min, €225.',
-    note:'Glencoe village/Ballachulish quasi complets — Fort William concentre l’offre, à 30 min des sites. −30 %.',
-    url:'https://www.booking.com/hotel/gb/waterfront-lodge-only-accommodation.html?checkin=2026-08-03&checkout=2026-08-05&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'Bien noté : Ravenswood Pod €236 (9.2) · Clan Macduff €271 (8.9). Nuit retour 7–8/8 : The Imperial €202.',
+    note:'Dispo réelle vérifiée le 21/6. Glencoe village complet — Fort William concentre l’offre, à 30 min des sites.',
+    url:'https://www.booking.com/hotel/gb/ossians.html?checkin=2026-08-03&checkout=2026-08-05&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'skye', lat:57.281, lng:-5.714, star:true,
-    area:'Isle of Skye — base sur le continent', best:'Skye Bridge Hotel (Kyle of Lochalsh)',
-    price:216, window:'5–7/8 (court)', rating:'3.9/5', hero:'img/stage-isle-of-skye.jpg',
+    region:'skye', lat:57.281, lng:-5.714, star:false,
+    area:'Isle of Skye — Kyle of Lochalsh', best:'The Lochalsh Hotel',
+    price:583, window:'5–7/8 (court)', rating:'8.5/10', hero:'img/stage-isle-of-skye.jpg',
     pois:[['Château d’Eilean Donan','15 min'],['Sligachan / Cuillin','45 min'],['Old Man of Storr','~55 min'],['Quiraing','~1h10']],
-    alts:'Long (9–13/8) : Plockton Hotel €256 (à 20 min, village waterfront très scénique). Sur l’île : Dunollie, Broadford €217 (chambres datées).',
-    note:'Le plus gros coup du séjour : évite les ~€612/nuit de Portree → −€792 sur 2 nuits pour ~50 min de route le matin.',
-    url:'https://www.booking.com/hotel/gb/the-skye-bridge.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'⚠️ L’option pas chère (Skye Bridge ~€216) est COMPLÈTE au 5–7/8 — il ne reste que Lochalsh Hotel €583. Pistes : Broadford/Dunollie (sur l’île, à vérifier), décaler d’1–2 jours, ou dormir dans le van cette nuit-là.',
+    note:'Le point noir du court aux dates exactes (dispo vérifiée 21/6). C’est LA nuit où le van se justifie — voir la page Mix.',
+    url:'https://www.booking.com/hotel/gb/lochalsh.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'cairngorms', lat:57.19, lng:-3.83, star:false,
-    area:'Cairngorms — Aviemore (voyage long)', best:'Macdonald Highlands Resort',
-    price:150, window:'13–15/8', rating:'3.4/5', hero:'',
+    area:'Cairngorms — Aviemore (voyage long)', best:'Coylumbridge Resort Hotel',
+    price:120, window:'13–15/8', rating:'7.2/10', hero:'',
     pois:[['Funiculaire Cairngorm','20 min'],['Loch an Eilein','12 min'],['Rothiemurchus','8 min'],['Loch Morlich (plage)','15 min']],
-    alts:'Mieux noté : Sweeney Aviemore €226 (4.5/5).',
-    note:'Grand resort avec piscine ; dispo correcte, réservable plus tard. Étape du voyage long uniquement.',
-    url:'https://www.booking.com/hotel/gb/aviemorehighlandresort.html?checkin=2026-08-13&checkout=2026-08-15&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'Dispo aussi : Macdonald Highlands €150 · mieux noté Cairngorm Hotel €264 (8.4).',
+    note:'Dispo réelle vérifiée le 21/6. Grand resort avec piscine. Étape du voyage long uniquement.',
+    url:'https://www.booking.com/hotel/gb/coylumbridge-hotel.html?checkin=2026-08-13&checkout=2026-08-15&no_rooms=1&group_adults=2&selected_currency=EUR'
   }
 ];
 window.BUDGET_STAYS=STAYS;
