@@ -91,6 +91,7 @@
   <h2>La carte des meilleurs plans</h2>
   <p class="lead">Fini les hôtels hors de prix : voici la <b>meilleure base maline par zone</b>, placée sur la carte. Chaque pastille montre le <b>prix/nuit (2 pers.)</b> ; touche-la pour voir les <b>distances en voiture</b> vers les sites et réserver. Le point doré ★ est le plus gros coup du séjour (Skye).</p>
   <div class="mapwrap" id="bmapwrap" style="height:min(72vh,560px)">
+    <div id="bmapcanvas" style="position:absolute;inset:0"></div>
     <div class="maplegend" id="blegend"></div>
     <div class="zoombtns"><button id="bzin">+</button><button id="bzout">−</button></div>
   </div>
@@ -165,9 +166,14 @@
   var STAYS=window.BUDGET_STAYS;
   var scrim=document.getElementById('scrim'),sheet=document.getElementById('sheet');
   function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-  var api=window.initBudgetMap(document.getElementById('bmapwrap'),{onStay:openStay});
-  document.getElementById('bzin').onclick=function(){api.zoomIn();};
-  document.getElementById('bzout').onclick=function(){api.zoomOut();};
+  // fermeture en premier : robuste même si la suite échoue
+  function closeSheet(){scrim.classList.remove('show');sheet.classList.remove('show');}
+  document.getElementById('sheetClose').onclick=closeSheet;
+  scrim.onclick=closeSheet;
+  var api=window.initBudgetMap(document.getElementById('bmapcanvas'),{onStay:openStay});
+  var zin=document.getElementById('bzin'),zout=document.getElementById('bzout');
+  if(zin)zin.onclick=function(){api.zoomIn();};
+  if(zout)zout.onclick=function(){api.zoomOut();};
   document.getElementById('blegend').innerHTML=
     '<div class="row" style="font-weight:700;margin-bottom:4px">€ / nuit · 2 pers.</div>'+
     '<div class="row"><i style="background:var(--gold)"></i>★ plus gros coup (Skye)</div>'+
@@ -189,8 +195,6 @@
       '<a class="bookbtn" href="'+s.url+'" target="_blank" rel="noopener">Réserver / voir les prix sur Booking →</a>';
     scrim.classList.add('show');sheet.classList.add('show');
   }
-  function closeSheet(){scrim.classList.remove('show');sheet.classList.remove('show');}
-  document.getElementById('sheetClose').onclick=closeSheet;scrim.onclick=closeSheet;
 })();
 </script>
 </body>
