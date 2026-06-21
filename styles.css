@@ -153,6 +153,14 @@ svg#map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-act
 #sheet .sh-body .stats{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 14px}
 #sheet .sh-body p{color:var(--slate);margin:0 0 10px}
 #sheet .tip{background:#eef4ef;border-left:3px solid var(--green);padding:9px 12px;border-radius:8px;font-size:13.5px;color:#2f4a3b}
+.poihead{font-weight:700;color:var(--ink);font-size:14px;margin:4px 0 6px}
+.poilist{list-style:none;padding:0;margin:0 0 12px}
+.poilist li{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink)}
+.poilist li:last-child{border-bottom:none}
+.poilist .poi-d{flex:none;min-width:96px;font-weight:700;color:var(--heather);font-size:13px}
+.bookbtn{display:inline-block;margin-top:6px;background:var(--heather);color:#fff;font-weight:700;font-size:14px;
+  text-decoration:none;padding:11px 16px;border-radius:11px}
+.pricepin text{font-size:13.5px}
 
 /* ---- budget page ---- */
 .budgrid{display:grid;gap:18px;grid-template-columns:1fr}
