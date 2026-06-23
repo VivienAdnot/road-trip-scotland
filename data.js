@@ -236,19 +236,18 @@ const BASES = {
    TRIPS — chaque voyage = une suite de bases (id + nuits) + les legs routiers.
    ========================================================================= */
 const TRIPS = {
-  short: {
-    id:'short', label:'Court', nights:8, days:9, dates:'1 → 9 août',
-    title:'8 nuits · l’essentiel',
-    tagline:"Le best-of : Édimbourg, Glencoe, Skye, Loch Lomond — avec une nuit-étape à Fort William pour casser le retour. Aucun trajet ne dépasse ~2h45.",
-    intensity:'🟡 actif',
+  middle: {
+    id:'middle', label:'Entre-deux', nights:10, days:11, dates:'4 → 14 août',
+    title:'10 nuits · l’entre-deux',
+    tagline:"Le compromis d’Audrey entre le court et le long : 4 grosses bases, peu de valises défaites, et 3 nuits sur Skye pour la savourer. Une seule grosse route (Skye → Loch Lomond), mais c’est la plus mythique.",
+    intensity:'🟡 équilibré',
     hero:'img/stage-isle-of-skye.jpg',
-    note:"Idéal si les congés sont comptés mais qu'on veut rester serein au volant (un seul conducteur). 5 bases, 4 transferts, jamais plus de ~2h45 de route d'affilée. Skye reste un peu compressé (~2 j) ; pour le savourer, c'est le voyage long.",
+    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits autour d’une pépite : le <b>Harlosh Stargazer Pod</b> (9.9/10), au nord-ouest de l’île — aux portes de Neist Point, Dunvegan et des Fairy Pools, à ~50 min des icônes du Trotternish (Old Man of Storr, Quiraing). Hébergements & budget détaillés dans l’onglet 💷 Budget.",
     bases:[
-      {base:'edinburgh',   nights:2},
-      {base:'glencoe',     nights:2},
-      {base:'skye',        nights:2},
-      {base:'fortwilliam', nights:1},
-      {base:'lomond',      nights:1}
+      {base:'edinburgh', nights:3},
+      {base:'glencoe',   nights:2},
+      {base:'skye',      nights:3},
+      {base:'lomond',    nights:2}
     ],
     legs:[
       {from:'edinburgh', to:'glencoe', via:'Stirling', drive:'~2h45 de conduite',
@@ -259,59 +258,16 @@ const TRIPS = {
        ]},
       {from:'glencoe', to:'skye', via:'Eilean Donan', drive:'~2h45 de conduite',
        stops:[
-         {at:'Eilean Donan', seg:'1h45', why:'le château sur son îlot — arrêt culte'},
-         {at:'Sligachan', seg:'1h', why:'vue sur les Cuillin avant Portree'}
+         {at:'Fort William', seg:'30 min', why:'ravitaillement avant la route de l’île'},
+         {at:'Eilean Donan', seg:'1h15', why:'le château sur son îlot — arrêt culte'},
+         {at:'Sligachan', seg:'1h', why:'les Cuillin avant d’arriver à Harlosh'}
        ]},
-      {from:'skye', to:'fortwilliam', via:'Eilean Donan', drive:'~2h45 de conduite',
-       stops:[
-         {at:'Sligachan', seg:'30 min', why:'dernier regard sur les Cuillin'},
-         {at:'Eilean Donan', seg:'45 min', why:'le château sur l’eau'},
-         {at:'Glen Shiel → Fort William', seg:'1h30', why:'vallée spectaculaire, arrivée'}
-       ]},
-      {from:'fortwilliam', to:'lomond', via:'Glencoe · Rannoch Moor', drive:'~1h30 de conduite',
-       stops:[
-         {at:'Glencoe (Three Sisters)', seg:'30 min', why:'on retraverse la vallée'},
-         {at:'Rannoch Moor', seg:'20 min', why:'le grand vide'},
-         {at:'Tyndrum → Loch Lomond', seg:'45 min', why:'arrivée tranquille (J+1 : Glasgow ~45 min)'}
-       ]}
-    ]
-  },
-  long: {
-    id:'long', label:'Long', nights:14, days:15, dates:'1 → 15 août',
-    title:'14 nuits · on respire',
-    tagline:"Le vrai équilibre : on en fait beaucoup (randos, Cairngorms, Skye en profondeur) ET on a des journées légères. Jamais plus de ~3h de route.",
-    intensity:'🟡 équilibré',
-    hero:'img/stage-glencoe-highlands.jpg',
-    note:"5 bases, 4 transferts seulement (Audrey ne défait les valises que 5 fois). 4-5 vraies randos possibles, Skye savouré sur 4 nuits, Cairngorms en bonus, 2-3 journées 'off'.",
-    bases:[
-      {base:'edinburgh', nights:3},
-      {base:'lomond',    nights:1},
-      {base:'glencoe',   nights:4},
-      {base:'skye',      nights:4},
-      {base:'cairngorms',nights:2}
-    ],
-    legs:[
-      {from:'edinburgh', to:'lomond', via:'Trossachs', drive:'~1h15 de conduite',
-       stops:[
-         {at:'Les Kelpies (Falkirk)', seg:'40 min', why:'sculptures géantes, si envie'},
-         {at:'Aberfoyle / Trossachs', seg:'35 min', why:'entrée dans le parc'}
-       ]},
-      {from:'lomond', to:'glencoe', via:'Rannoch Moor', drive:'~1h30 de conduite',
-       stops:[
-         {at:'Tyndrum (Green Welly)', seg:'45 min', why:'pause café / essence'},
-         {at:'Rannoch Moor', seg:'45 min', why:'le grand vide, arrêt photo'}
-       ]},
-      {from:'glencoe', to:'skye', via:'Eilean Donan', drive:'~2h45 de conduite',
-       stops:[
-         {at:'Fort William', seg:'30 min', why:'ravitaillement'},
-         {at:'Eilean Donan', seg:'1h15', why:'le château incontournable'},
-         {at:'Sligachan', seg:'1h', why:'les Cuillin avant Portree'}
-       ]},
-      {from:'skye', to:'cairngorms', via:'Loch Ness · Inverness', drive:'~2h45 de conduite',
+      {from:'skye', to:'lomond', via:'Glen Shiel · Glencoe · Rannoch Moor', drive:'~4h de conduite', warn:true,
        stops:[
          {at:'Eilean Donan', seg:'1h', why:'dernier regard sur l’ouest'},
-         {at:'Loch Ness / Inverness', seg:'1h15', why:'déjeuner, le grand loch'},
-         {at:'Aviemore', seg:'45 min', why:'entrée dans les Cairngorms'}
+         {at:'Glen Shiel → Fort William', seg:'1h30', why:'vallée spectaculaire, déjeuner'},
+         {at:'Glencoe (Three Sisters) & Rannoch Moor', seg:'1h', why:'on retraverse le cœur sauvage'},
+         {at:'Tyndrum → Loch Lomond', seg:'45 min', why:'arrivée tranquille (J+1 : Glasgow ~45 min)'}
        ]}
     ]
   }

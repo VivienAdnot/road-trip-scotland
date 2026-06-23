@@ -14,8 +14,7 @@ const bases=trip.bases.map(b=>Object.assign({},window.BASES[b.base],{id:b.base,n
 function nav(){
   return `<nav class="nav"><div class="wrap">
     <a class="brand" href="index.html"><span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>Road trip Écosse</a>
-    <a class="tab ${trip.id==='short'?'active':''}" href="short.html">Court · ${window.TRIPS.short.nights} n</a>
-    <a class="tab ${trip.id==='long'?'active':''}" href="long.html">Long · ${window.TRIPS.long.nights} n</a>
+    <a class="tab ${trip.id==='middle'?'active':''}" href="middle.html">Itinéraire · ${trip.nights} n</a>
     <a class="tab" href="budget.html">💷 Budget</a>
   </div></nav>`;
 }
@@ -117,7 +116,7 @@ function basesSection(){
 function footer(){
   return `<footer><div class="wrap">
     <div>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Road trip Écosse — planning perso. Conduite à gauche, midges en août, paie sans contact partout, météo changeante : prévois des couches.</div>
-    <div>Photos : fonds locaux + Wikimedia Commons (CC/CC0). <a href="long.html">Voir le voyage long</a> · <a href="short.html">le court</a></div>
+    <div>Photos : fonds locaux + Wikimedia Commons (CC/CC0). <a href="budget.html">Hébergements & budget</a></div>
   </div></footer>`;
 }
 
