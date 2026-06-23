@@ -242,7 +242,7 @@ const TRIPS = {
     tagline:"Le compromis d’Audrey entre le court et le long : 4 grosses bases, peu de valises défaites, et 3 nuits sur Skye pour la savourer. Une seule grosse route (Skye → Loch Lomond), mais c’est la plus mythique.",
     intensity:'🟡 équilibré',
     hero:'img/stage-isle-of-skye.jpg',
-    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits autour d’une pépite : le <b>Harlosh Stargazer Pod</b> (9.9/10), au nord-ouest de l’île — aux portes de Neist Point, Dunvegan et des Fairy Pools, à ~50 min des icônes du Trotternish (Old Man of Storr, Quiraing). Hébergements & budget détaillés dans l’onglet 💷 Budget.",
+    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits autour d’une pépite : le Harlosh Stargazer Pod (9.9/10), au nord-ouest de l’île — aux portes de Neist Point, Dunvegan et des Fairy Pools, à ~50 min des icônes du Trotternish (Old Man of Storr, Quiraing). Hébergements & budget détaillés dans l’onglet 💷 Budget.",
     bases:[
       {base:'edinburgh', nights:3},
       {base:'glencoe',   nights:2},
