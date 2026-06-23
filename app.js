@@ -113,6 +113,31 @@ function basesSection(){
     ${bases.map((b,i)=>baseBlock(b,i)).join('')}
   </div></section>`;
 }
+/* ---------- spots chaises + café ---------- */
+function cafeSpotsSection(){
+  const spots=window.CAFE_SPOTS||[];
+  if(!spots.length) return '';
+  const cards=spots.map(s=>{
+    const ph=s.img?`<img loading="lazy" referrerpolicy="no-referrer" src="${s.img}" alt="" onerror="this.style.display='none';this.parentNode.classList.add('noimg')">`:illus('#3f7d8c');
+    return `<article class="act${s.star?' must':''}">
+      <div class="ph">${ph}
+        ${s.star?'<span class="musttag">★ pépite</span>':''}
+        <span class="typetag">☕ ${esc(s.leg)}</span>
+      </div>
+      <div class="ac">
+        <h5>${esc(s.name)}</h5>
+        <p class="desc">${esc(s.why)}</p>
+        <div style="margin-top:auto;background:#eef4ef;border-left:3px solid var(--green);padding:7px 10px;border-radius:8px;font-size:12px;color:#2f4a3b">🌧️ <b>Plan pluie :</b> ${esc(s.rain)}</div>
+      </div>
+    </article>`;
+  }).join('');
+  return `<section class="section" style="padding-top:6px"><div class="wrap">
+    <div class="eyebrow">L'esprit van, sans le van</div>
+    <h2>Spots chaises + café</h2>
+    <p class="lead">Les meilleurs endroits où se garer, sortir les chaises pliantes et faire le café — dans l'ordre du parcours, vue de dingue accessible en voiture, peu ou pas de marche. ⭐ = les pépites. Le <b>plan pluie</b> de chacun : hayon ouvert ou sièges inclinés deviennent ta « banquette de van », au sec face au paysage.</p>
+    <div class="acts">${cards}</div>
+  </div></section>`;
+}
 function footer(){
   return `<footer><div class="wrap">
     <div>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Road trip Écosse — planning perso. Conduite à gauche, midges en août, paie sans contact partout, météo changeante : prévois des couches.</div>
@@ -121,7 +146,7 @@ function footer(){
 }
 
 document.body.insertAdjacentHTML('beforeend',
-  nav()+hero()+mapSection()+basesSection()+footer()+
+  nav()+hero()+mapSection()+basesSection()+cafeSpotsSection()+footer()+
   `<div id="scrim"></div>
    <div id="sheet"><div class="sh-hero"><button id="sheetClose">×</button><img id="shImg" alt=""><span class="cap" id="shCap"></span></div>
      <div class="sh-body" id="shBody"></div></div>`);

@@ -273,6 +273,56 @@ const TRIPS = {
   }
 };
 
+/* =========================================================================
+   CAFE_SPOTS — "L'esprit van, sans le van" : les meilleurs spots où se garer,
+   sortir les chaises pliantes et faire le café, dans l'ordre du parcours.
+   Vue de dingue accessible en voiture, peu/pas de marche. star = pépite.
+   rain = le plan pluie (la voiture comme banquette/abri).
+   ========================================================================= */
+const CAFE_SPOTS = [
+  {name:'Lochan na h-Achlaise — Rannoch Moor', leg:'Route → Glencoe', star:true,
+   why:"Le spot mythique : petit loch avec son îlot-arbre, tourbière à perte de vue, le Black Mount au fond. Layby pile devant, zéro marche.",
+   rain:"café au chaud face au grand vide sauvage — l'un des plus beaux « rien » d'Écosse.",
+   img:W.rannoch},
+  {name:'Glen Etive', leg:'Base Glencoe', star:true,
+   why:"Route en cul-de-sac (le décor de Skyfall) le long d'une rivière : cascades, vasques, cerfs, et souvent personne. Mille endroits où poser les chaises au bord de l'eau.",
+   rain:"hayon ouvert au bord de la rivière, le bruit de l'eau et un bouquin.",
+   img:'img/site-glen-etive.jpg'},
+  {name:'Three Sisters — Glen Coe', leg:'Base Glencoe', star:false,
+   why:"Grand parking-belvédère face aux trois éperons mythiques de la vallée. Spectaculaire et accessible direct depuis la route.",
+   rain:"vue plein cadre depuis les sièges, les nuages s'accrochent aux sommets.",
+   img:'img/site-three-sisters-glencoe.jpg'},
+  {name:'Viewpoint de Loch Garry', leg:'Route → Skye', star:true,
+   why:"Le fameux loch en forme de carte de l'Écosse, depuis un layby sur l'A87. La photo culte + le café.",
+   rain:"depuis la voiture, le loch en contrebas qui sort de la brume.",
+   img:'https://commons.wikimedia.org/wiki/Special:FilePath/Loch_Garry.jpg?width=1024'},
+  {name:"Château d'Eilean Donan", leg:'Route → Skye', star:false,
+   why:"Le château sur son îlot, bancs et café au bord de l'eau. Arrêt culte à mi-chemin vers Skye.",
+   rain:"café au chaud, le château sous la bruine = encore plus écossais.",
+   img:'img/site-ch-teau-d-eilean-donan.jpg'},
+  {name:'Sligachan', leg:'Arrivée Skye', star:false,
+   why:"Vieux pont de pierre devant les Cuillin déchiquetées, grand parking, rivière. L'un des panoramas les plus photographiés d'Écosse.",
+   rain:"les Cuillin dans les nuages, depuis la caisse au bord de la rivière.",
+   img:W.sligachan},
+  {name:'Quiraing — parking du col', leg:'Sur Skye', star:true,
+   why:"La vue épique DEPUIS le parking, zéro rando obligatoire. Chaises face à la crête d'effondrement du Trotternish.",
+   rain:"d'anthologie : lire en regardant les nuages rouler sur le Quiraing.",
+   img:'img/site-quiraing.jpg'},
+  {name:'Neist Point', leg:'Sur Skye', star:true,
+   why:"Pointe la plus à l'ouest de Skye : falaises, phare, LES couchers de soleil de l'île. Petit parking, vue mer immédiate.",
+   rain:"le phare battu par le vent, vue mer plein cadre depuis les sièges.",
+   img:'img/site-neist-point.jpg'},
+  {name:'Milarrochy Bay — Balmaha', leg:'Loch Lomond', star:true,
+   why:"Plage de galets sur le Loch Lomond, l'endroit carte-postale pour les chaises au coucher du soleil.",
+   rain:"le loch gris-argent sous la pluie, thermos et plaid dans le coffre.",
+   img:W.lochLomond},
+  {name:'Luss', leg:'Loch Lomond', star:false,
+   why:"Village de pierre et plage sur le Loch Lomond, café au village. Balade plate et photogénique.",
+   rain:"café au village, à l'abri, en attendant l'éclaircie.",
+   img:W.luss}
+];
+
 window.REGIONS = REGIONS;
 window.BASES = BASES;
 window.TRIPS = TRIPS;
+window.CAFE_SPOTS = CAFE_SPOTS;
