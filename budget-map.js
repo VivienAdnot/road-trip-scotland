@@ -8,48 +8,39 @@ const SVG='http://www.w3.org/2000/svg';
 const STAYS=[
   {
     region:'lothians', lat:55.945, lng:-3.218, star:false,
-    area:'Édimbourg — Newington', best:'Bala House',
-    price:173, window:'1–3/8', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
+    area:'Étape 1 · Édimbourg — Newington', best:'Bala House',
+    price:174, window:'4–7/8 · 3 nuits', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
     pois:[['Château + Royal Mile','~20 min à pied'],['Arthur’s Seat','12 min'],['Calton Hill','10 min'],['Dean Village','12 min']],
-    alts:'Dispo aussi : Arrandale €191 (8.0, parking) · central 4★ Moxy €228. Leg le plus cher (Fringe) — réserver en premier.',
-    note:'Dispo réelle vérifiée le 21/6 aux dates. Guesthouse 3★, parking gratuit.',
-    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-01&checkout=2026-08-03&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'Dispo aussi (Newington) : Gladstone House €242 (9.1) · The Scholar €263 (9.0). Leg le plus demandé (Fringe) — réserver en premier.',
+    note:'Re-vérifié le 23/6 aux dates 4–7/8. Guesthouse 3★, parking gratuit, 289 avis. €522 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-04&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'trossachs', lat:56.00, lng:-4.58, star:true,
-    area:'Loch Lomond — Balloch', best:'Glenfern Guest House',
-    price:98, window:'8–9/8', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
+    region:'highlands', lat:56.853, lng:-5.058, star:false,
+    area:'Étape 2 · Glencoe & Lochaber — Fort William (Torlundy)', best:'Tower Ridge House',
+    price:209, window:'7–9/8 · 2 nuits', rating:'9.2/10', hero:'img/stage-glencoe-highlands.jpg',
+    pois:[['Steall Falls (Glen Nevis)','15 min'],['Nevis Range / Ben Nevis','10 min'],['Viaduc de Glenfinnan','~30 min'],['Three Sisters (Glen Coe)','~35 min']],
+    alts:'Notre 1er choix Ossians est complet aux dates → remplacé par Tower Ridge House (9.2, super noté). Sinon Torlinnhe €306 (9.4, bord du loch).',
+    note:'Re-vérifié le 23/6. Sous le Ben Nevis (Torlundy), ~7 km nord de Fort William : idéal Glen Nevis + Glenfinnan sur la route de Skye. €418 les 2 nuits.',
+    url:'https://www.booking.com/hotel/gb/tower-ridge-house-fort-william.html?checkin=2026-08-07&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
+  },
+  {
+    region:'skye', lat:57.3836, lng:-6.510, star:true,
+    area:'Étape 3 · Isle of Skye — Harlosh (NW)', best:'Harlosh Stargazer Pod',
+    price:226, window:'9–12/8 · 3 nuits', rating:'9.9/10', hero:'img/stage-isle-of-skye.jpg',
+    pois:[['Château de Dunvegan','~20 min'],['Neist Point (phare)','~35 min'],['Fairy Pools (Glen Brittle)','~40 min'],['Old Man of Storr / Quiraing','~50–60 min']],
+    alts:'LA pépite : 9.9/100 avis, le mieux noté ET le moins cher des 3 nuits dispo sur l’île. Pod ciel étoilé, adultes. Plus près des icônes (au pied du Storr) : Keeper’s Cottage Staffin €297, Cottage by the Sea Culnacnoc €491 (3 ch, bord de mer).',
+    note:'★ Le point fort du séjour. NW de l’île : ~50 min des icônes du Trotternish (Storr/Quiraing) mais aux portes de Neist Point, Dunvegan et des Fairy Pools. Booking annonçait Skye « complet » — un mirage hôtelier : le self-catering est dispo. €677 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
+  },
+  {
+    region:'trossachs', lat:56.00, lng:-4.58, star:false,
+    area:'Étape 4 · Loch Lomond — Balloch', best:'Glenfern Guest House',
+    price:151, window:'12–14/8 · 2 nuits', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
     pois:[['Luss & rive du loch','12 min'],['Conic Hill / Balmaha','15 min'],['Ben A’an','35 min'],['Loch Katrine (vapeur)','40 min']],
-    alts:'Le meilleur prix du séjour. Dispo aussi : Norwood €127 (8.6) · Loch Lomond Hotel €203.',
-    note:'Dispo réelle vérifiée le 21/6. 3★, parking gratuit, adultes uniquement.',
-    url:'https://www.booking.com/hotel/gb/glenfern-guest-house.html?checkin=2026-08-08&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
-  },
-  {
-    region:'highlands', lat:56.82, lng:-5.105, star:false,
-    area:'Glencoe & Lochaber — base à Fort William', best:'Ossians',
-    price:159, window:'3–5/8 (Glencoe) · 7–8/8 retour €202', rating:'n/a', hero:'img/stage-glencoe-highlands.jpg',
-    pois:[['Three Sisters (Glen Coe)','30 min'],['Steall Falls (Glen Nevis)','15 min'],['Viaduc de Glenfinnan','25 min'],['Lost Valley','30 min']],
-    alts:'Bien noté : Ravenswood Pod €236 (9.2) · Clan Macduff €271 (8.9). Nuit retour 7–8/8 : The Imperial €202.',
-    note:'Dispo réelle vérifiée le 21/6. Glencoe village complet — Fort William concentre l’offre, à 30 min des sites.',
-    url:'https://www.booking.com/hotel/gb/ossians.html?checkin=2026-08-03&checkout=2026-08-05&no_rooms=1&group_adults=2&selected_currency=EUR'
-  },
-  {
-    region:'highlands', lat:57.144, lng:-4.679, star:false,
-    area:'Base Skye (≤€250) — Fort Augustus', best:'Appin House B&B',
-    price:184, window:'5–7/8 (court)', rating:'8.4/10', hero:'img/stage-isle-of-skye.jpg',
-    pois:[['Loch Ness (sur place)','5 min'],['Château d’Eilean Donan','~50 min'],['Pont de Skye','~1h05'],['Old Man of Storr / Portree','~1h45']],
-    alts:'⚠️ Sous €250, RIEN près de Skye : tout le corridor Kyleakin→Lochcarron (hôtels, B&B, cabanes, gîtes) est complet en août. Le seul ≤€250 est ici, à Fort Augustus, sud du Loch Ness. Plus près mais hors budget : Plockton Inn €368 (~1h15 des sites), Lochalsh Hotel €583 (5 min du pont).',
-    note:'Plafond €250 oblige : on dort à Fort Augustus et on monte sur Skye à la journée (~1h45). Gros compromis route — si tu peux pousser à ~€370, Plockton réduit la route de moitié.',
-    url:'https://www.booking.com/hotel/gb/appin-house.html?checkin=2026-08-05&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
-  },
-  {
-    region:'cairngorms', lat:57.19, lng:-3.83, star:false,
-    area:'Cairngorms — Aviemore (voyage long)', best:'Coylumbridge Resort Hotel',
-    price:120, window:'13–15/8', rating:'7.2/10', hero:'',
-    pois:[['Funiculaire Cairngorm','20 min'],['Loch an Eilein','12 min'],['Rothiemurchus','8 min'],['Loch Morlich (plage)','15 min']],
-    alts:'Dispo aussi : Macdonald Highlands €150 · mieux noté Cairngorm Hotel €264 (8.4).',
-    note:'Dispo réelle vérifiée le 21/6. Grand resort avec piscine. Étape du voyage long uniquement.',
-    url:'https://www.booking.com/hotel/gb/coylumbridge-hotel.html?checkin=2026-08-13&checkout=2026-08-15&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'Dispo aussi : Tullie Inn €182 (8.5, centre Balloch) · Abbotsford €103 (8.6, le moins cher, à Dumbarton 6 km sud).',
+    note:'Re-vérifié le 23/6 aux dates 12–14/8. 3★, parking gratuit, adultes. Dernière étape avant le vol à Glasgow. €302 les 2 nuits.',
+    url:'https://www.booking.com/hotel/gb/glenfern-guest-house.html?checkin=2026-08-12&checkout=2026-08-14&no_rooms=1&group_adults=2&selected_currency=EUR'
   }
 ];
 window.BUDGET_STAYS=STAYS;

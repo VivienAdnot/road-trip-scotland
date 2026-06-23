@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
+    "updated": "2026-06-23",
+    "fx_note": "£→€ ≈ 1.17",
+    "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
+    "windows_format": "checkin_checkout, ex 2026-08-05_07 = 2 nuits du 5 au 7 août",
+    "status_values": ["available", "sold_out", "not_checked"],
+    "sources": ["booking.com", "booking-directly.com", "airbnb", "vrbo"]
+  },
+  "skye_anchors": {
+    "Portree": "capitale de l'île",
+    "Old Man of Storr": "rando emblématique",
+    "Quiraing": "paysage le plus spectaculaire",
+    "Fairy Pools": "Glen Brittle",
+    "Neist Point": "phare ouest",
+    "Dunvegan Castle": "nord-ouest",
+    "Eilean Donan": "château sur la route d'accès (continent)"
+  },
+  "properties": [
+    {
+      "id": "direct:isle-of-skye-guest-house-kyleakin",
+      "name": "Isle of Skye Guest House",
+      "type": "guest_house",
+      "town": "Kyleakin",
+      "postcode": "IV41 8PQ",
+      "region": "skye",
+      "lat": 57.2756, "lng": -5.7385,
+      "source": "booking-directly.com",
+      "url": "https://booking-directly.com/widgets/UzIOMYdBIK8UTkuqgJKCdQNKFbQhfGuQp9WlauYXrAZRptbcMfTC8ot1SF4PV/properties/unit-selection",
+      "rating": null,
+      "drive_to": {"pont de Skye": "5min", "Portree": "~40min", "Old Man of Storr": "~50min", "Eilean Donan": "~10min"},
+      "note": "Vrai lit SUR l'île, 5 min du pont. Inventory direct-booking, invisible des OTA.",
+      "obs": [
+        {"window": "2026-08-05_07", "status": "sold_out", "checked": "2026-06-23"},
+        {"window": "2026-08-11_13", "status": "available", "price_pn_gbp": 261, "price_pn_eur": 305, "rate": "Annexe King/Twin, non-remboursable, Only 1 Left", "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:bala-house-edinburgh",
+      "name": "Bala House",
+      "type": "bed_and_breakfast",
+      "town": "Édimbourg (Newington)",
+      "region": "lothians",
+      "lat": 55.945, "lng": -3.218,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/bala-house.html",
+      "rating": 8.7,
+      "obs": [
+        {"window": "2026-08-01_03", "status": "available", "price_pn_eur": 173, "checked": "2026-06-21"},
+        {"window": "2026-08-04_07", "status": "available", "price_total_eur": 521, "price_pn_eur": 174, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:glenfern-guest-house-balloch",
+      "name": "Glenfern Guest House",
+      "type": "guest_house",
+      "town": "Balloch (Loch Lomond)",
+      "region": "trossachs",
+      "lat": 56.00, "lng": -4.58,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/glenfern-guest-house.html",
+      "rating": 8.1,
+      "note": "Meilleur prix du séjour court.",
+      "obs": [
+        {"window": "2026-08-08_09", "status": "available", "price_pn_eur": 98, "checked": "2026-06-21"},
+        {"window": "2026-08-12_14", "status": "available", "price_total_eur": 301, "price_pn_eur": 151, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:ossians-fort-william",
+      "name": "Ossians Hotel / Apartments",
+      "type": "guest_house",
+      "town": "Fort William",
+      "region": "highlands",
+      "lat": 56.82, "lng": -5.105,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/ossians.html",
+      "rating": null,
+      "obs": [
+        {"window": "2026-08-03_05", "status": "available", "price_pn_eur": 159, "checked": "2026-06-21"},
+        {"window": "2026-08-07_09", "status": "sold_out", "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:appin-house-fort-augustus",
+      "name": "Appin House B&B",
+      "type": "bed_and_breakfast",
+      "town": "Fort Augustus",
+      "region": "highlands",
+      "lat": 57.144, "lng": -4.679,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/appin-house.html",
+      "rating": 8.4,
+      "note": "Seul ≤€250 trouvé pour le créneau Skye 5-7, mais ~1h45 des sites de Skye.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 184, "checked": "2026-06-21"}]
+    },
+    {
+      "id": "booking:coylumbridge-aviemore",
+      "name": "Coylumbridge Resort Hotel",
+      "type": "hotel",
+      "town": "Aviemore",
+      "region": "cairngorms",
+      "lat": 57.19, "lng": -3.83,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/coylumbridge-hotel.html",
+      "rating": 7.2,
+      "obs": [{"window": "2026-08-13_15", "status": "available", "price_pn_eur": 120, "checked": "2026-06-21"}]
+    },
+    {
+      "id": "booking:plockton-inn",
+      "name": "Plockton Inn",
+      "type": "hotel",
+      "town": "Plockton",
+      "region": "skye-corridor",
+      "lat": 57.336, "lng": -5.658,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/plockton-inn.html",
+      "rating": null,
+      "note": "Continent, ~1h15 des sites de Skye, au bord de l'eau.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 368, "checked": "2026-06-21"}]
+    },
+    {
+      "id": "booking:lochalsh-hotel-kyle",
+      "name": "Lochalsh Hotel",
+      "type": "hotel",
+      "town": "Kyle of Lochalsh",
+      "region": "skye-corridor",
+      "lat": 57.281, "lng": -5.714,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/lochalsh.html",
+      "rating": null,
+      "note": "Continent côté pont, 5 min de Skye, mais cher.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 583, "checked": "2026-06-21"}]
+    },
+    {
+      "id": "booking:the-skye-bridge-hotel-kyleakin",
+      "name": "The Skye Bridge Hotel",
+      "type": "hotel",
+      "town": "Kyleakin",
+      "region": "skye",
+      "lat": 57.2756, "lng": -5.7385,
+      "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/the-skye-bridge.html",
+      "rating": null,
+      "obs": [{"window": "2026-08-05_07", "status": "sold_out", "checked": "2026-06-21"}]
+    },
+    {
+      "id": "booking:taransay-house-portree",
+      "name": "Taransay House (Small Hotel)", "type": "hotel", "town": "Portree", "region": "skye",
+      "lat": 57.40976, "lng": -6.201985, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/taransay-house.html", "rating": 9.8,
+      "note": "MEILLEUR de l'île : 5-star, adults-only, 9.8/74 avis, Viewfield Rd Portree. Le pick 'inoubliable' côté hôtel.",
+      "obs": [{"window": "2026-08-09_11", "status": "available", "price_pn_eur": 730, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:ullinish-house",
+      "name": "Ullinish House", "type": "hotel", "town": "Ullinish", "region": "skye",
+      "lat": 57.35125, "lng": -6.449446, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/ullinish-house.html", "rating": 9.1,
+      "note": "4-star country house, bord de Loch Bracadale (côte ouest), cheminée extérieure.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_pn_eur": 503, "checked": "2026-06-23"},
+        {"window": "2026-08-13_15", "status": "available", "price_pn_eur": 503, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:eilean-iarmain-sleat",
+      "name": "Hotel Eilean Iarmain", "type": "hotel", "town": "Isleornsay (Sleat)", "region": "skye",
+      "lat": 57.145338, "lng": -5.799378, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/eilean-iarmain.html", "rating": 8.9,
+      "note": "Auberge gaélique historique en bord de mer, péninsule de Sleat, galerie d'art. Très typé.",
+      "obs": [{"window": "2026-08-09_11", "status": "available", "price_pn_eur": 653, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:skeabost-house-portree",
+      "name": "Skeabost House Hotel", "type": "hotel", "town": "Skeabost Bridge (Portree)", "region": "skye",
+      "lat": 57.454595, "lng": -6.315647, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/skeabostcountryhouse.html", "rating": 8.8,
+      "note": "4-star manoir victorien sur Loch Snizort, golf.",
+      "obs": [{"window": "2026-08-13_15", "status": "available", "price_pn_eur": 700, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:bracken-hide-portree",
+      "name": "Bracken Hide Hotel", "type": "hotel", "town": "Portree", "region": "skye",
+      "lat": 57.413988, "lng": -6.21038, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/bracken-hide-portree-isle-of-skye1.html", "rating": 8.4,
+      "note": "Cabines/hide design au-dessus de Portree, sauna. Neuf et très spécial.",
+      "obs": [{"window": "2026-08-13_15", "status": "available", "price_pn_eur": 679, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:atholl-house-dunvegan",
+      "name": "Atholl House Skye", "type": "guest_house", "town": "Dunvegan", "region": "skye",
+      "lat": 57.432745, "lng": -6.574287, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/atholl-guest-house.html", "rating": null,
+      "note": "Guest house adults-only près du château de Dunvegan.",
+      "obs": [
+        {"window": "2026-08-09_11", "status": "available", "price_pn_eur": 644, "checked": "2026-06-23"},
+        {"window": "2026-08-13_15", "status": "available", "price_pn_eur": 527, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "booking:the-hideout-portree",
+      "name": "The Hideout", "type": "holiday_home", "town": "Portree", "region": "skye",
+      "lat": 57.416239, "lng": -6.190412, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/mill-park.html", "rating": 8.0,
+      "note": "Self-catering haut de gamme à Portree, très cher.",
+      "obs": [{"window": "2026-08-07_09", "status": "available", "price_pn_eur": 1142, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:redwood-house-greshornish",
+      "name": "Redwood House", "type": "bed_and_breakfast", "town": "Greshornish", "region": "skye",
+      "lat": 57.496657, "lng": -6.439576, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/redwood-house-b-amp-b.html", "rating": 7.6,
+      "note": "Seul lit Booking SUR l'île pour la fenêtre 05-07 (NW Skye, adults-only).",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 577, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:croft-house-kilmuir",
+      "name": "Traditional Croft House (modern interior, near coast)", "type": "holiday_home", "town": "Kilmuir (Trotternish)", "region": "skye",
+      "lat": 57.605, "lng": -6.327, "source": "vrbo",
+      "url": "https://www.vrbo.com/8143737ha", "rating": 10,
+      "note": "DÉBLOQUE 05-07 : cottage 5 pers., Premier Host, 10/10, nord Trotternish. Prix Vrbo non lisible → à confirmer manuellement.",
+      "obs": [
+        {"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"},
+        {"window": "2026-08-09_11", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "vrbo:the-lookout-teangue",
+      "name": "The Lookout, Teangue", "type": "holiday_home", "town": "Teangue (Sleat)", "region": "skye",
+      "lat": 57.108, "lng": -5.835, "source": "vrbo",
+      "url": "https://www.vrbo.com/12095938ha", "rating": 10,
+      "note": "DÉBLOQUE 05-07 : 10/10, vue mer (nom 'Lookout'). Prix à confirmer.",
+      "obs": [
+        {"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"},
+        {"window": "2026-08-09_11", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "vrbo:skye-boathouse-kingsburgh",
+      "name": "Secluded Skye Boathouse", "type": "holiday_home", "town": "Kingsburgh (Trotternish)", "region": "skye",
+      "lat": 57.505, "lng": -6.345, "source": "vrbo",
+      "url": "https://www.vrbo.com/12133333ha", "rating": null,
+      "note": "DÉBLOQUE 05-07 : boathouse côtier isolé, très spécial, listing récent. Prix à confirmer.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:ceol-na-mara-uig",
+      "name": "Ceól na Mara — Serene Uig Retreat", "type": "holiday_home", "town": "Idrigill/Uig", "region": "skye",
+      "lat": 57.586, "lng": -6.371, "source": "vrbo",
+      "url": "https://www.vrbo.com/12094657ha", "rating": 9.6,
+      "note": "DÉBLOQUE 05-07 : appart 9.6/10, côté ferry d'Uig. Prix à confirmer.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:skye-eco-bells-orbost",
+      "name": "Skye Eco Bells Glamping (off-grid)", "type": "holiday_home", "town": "Orbost", "region": "skye",
+      "lat": 57.42, "lng": -6.61, "source": "vrbo",
+      "url": "https://www.vrbo.com/10579647ha", "rating": 10,
+      "note": "DÉBLOQUE 05-07 : cabane éco off-grid 10/10. Prix à confirmer.",
+      "obs": [
+        {"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"},
+        {"window": "2026-08-09_11", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}
+      ]
+    },
+    {
+      "id": "vrbo:eco-house-skinidin-dunvegan",
+      "name": "Eco modern house, panoramic views (by Dunvegan)", "type": "holiday_home", "town": "Skinidin (Dunvegan)", "region": "skye",
+      "lat": 57.433, "lng": -6.62, "source": "vrbo",
+      "url": "https://www.vrbo.com/8166008ha", "rating": 10,
+      "note": "DÉBLOQUE 05-07 : maison moderne vue panoramique 10/10. Prix à confirmer.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:skye-cottage-distillery",
+      "name": "Charming Skye Cottage near distillery", "type": "holiday_home", "town": "Isle of Skye", "region": "skye",
+      "lat": 57.40, "lng": -6.30, "source": "vrbo",
+      "url": "https://www.vrbo.com/12117876ha", "rating": 9.8,
+      "note": "DÉBLOQUE 05-07 : cottage 9.8/10, 9 min à pied d'une plage, pet-friendly. Prix à confirmer.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:bornesketaig-home",
+      "name": "Home in Bornesketaig (north Trotternish)", "type": "holiday_home", "town": "Bornesketaig", "region": "skye",
+      "lat": 57.633, "lng": -6.36, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1687860387841291329", "rating": null,
+      "note": "DÉBLOQUE 05-07 sur Airbnb : pointe nord de Trotternish, près des falaises.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 290, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:breakish-apartment",
+      "name": "Apartment in Breakish (south Skye)", "type": "holiday_home", "town": "Breakish", "region": "skye",
+      "lat": 57.244, "lng": -5.823, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/955654583692481706", "rating": 5.0,
+      "note": "Premium, 5.0 parfait, sud de l'île (10 min du pont).",
+      "obs": [{"window": "2026-08-11_13", "status": "available", "price_pn_eur": 754, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:portree-home",
+      "name": "Home in Portree (central, harbour)", "type": "holiday_home", "town": "Portree", "region": "skye",
+      "lat": 57.412, "lng": -6.194, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/23234570", "rating": 4.88,
+      "note": "Centre de Portree.",
+      "obs": [{"window": "2026-08-13_15", "status": "available", "price_pn_eur": 389, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:dunvegan-home",
+      "name": "Home in Dunvegan (near castle)", "type": "holiday_home", "town": "Dunvegan", "region": "skye",
+      "lat": 57.444, "lng": -6.583, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1170808301907760007", "rating": 4.91,
+      "obs": [{"window": "2026-08-13_15", "status": "available", "price_pn_eur": 390, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:glenfinnan-tiny-home",
+      "name": "Tiny home in Glenfinnan (viaduct area)", "type": "holiday_home", "town": "Glenfinnan", "region": "lochaber",
+      "lat": 56.872, "lng": -5.435, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1669048103116881378", "rating": 5.0,
+      "note": "Pas Skye — utile pour un segment Glenfinnan/viaduc. 5.0.",
+      "obs": [{"window": "2026-08-09_11", "status": "available", "price_pn_eur": 186, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:torlundy-tiny-home",
+      "name": "Tiny home in Torlundy (under Ben Nevis)", "type": "holiday_home", "town": "Torlundy (Fort William)", "region": "lochaber",
+      "lat": 56.85, "lng": -5.06, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1682847335646425260", "rating": 5.0,
+      "note": "Pas Skye — base Fort William, 5.0 parfait.",
+      "obs": [{"window": "2026-08-05_07", "status": "available", "price_pn_eur": 256, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:harlosh-stargazer-pod",
+      "name": "Harlosh Hideaways — Stargazer Pod", "type": "holiday_home", "town": "Harlosh (près Dunvegan)", "region": "skye",
+      "lat": 57.3836, "lng": -6.510163, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html", "rating": 9.9,
+      "note": "PÉPITE : mieux noté de tout le scan (9.9/100). Pod adults-only NW Skye, ciel étoilé. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 677, "price_pn_eur": 226, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:skye-fall-sleat",
+      "name": "Skye-Fall", "type": "holiday_home", "town": "Drumfearn (Sleat)", "region": "skye",
+      "lat": 57.175354, "lng": -5.842202, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/skye-fall-isle-of-skye.html", "rating": 9.0,
+      "note": "Self-catering 4-star, sud de l'île (Sleat), plage + terrasse. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 990, "price_pn_eur": 330, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:isle-of-skye-lodge-hot-tub",
+      "name": "Isle of Skye — lodge for two with hot tub", "type": "holiday_home", "town": "Isleornsay (Sleat)", "region": "skye",
+      "lat": 57.140122, "lng": -5.801467, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/isle-of-skye-lodge-for-two-with-hot-tub.html", "rating": 5.0,
+      "note": "Lodge 2 pers. avec jacuzzi, péninsule de Sleat. Aussi sur Airbnb (rooms/881216720014424888) noté 5.0/55. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 1471, "price_pn_eur": 490, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:heilan-hideaway-portree",
+      "name": "Heilan Hideaway", "type": "holiday_home", "town": "Portree", "region": "skye",
+      "lat": 57.41, "lng": -6.19, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1536931173616215889", "rating": 4.85,
+      "note": "Guest favorite (20 avis), Portree centre. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 1009, "price_pn_eur": 336, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:keepers-cottage-staffin",
+      "name": "Flat 2 Keeper's Cottage", "type": "holiday_home", "town": "Staffin (Trotternish)", "region": "skye",
+      "lat": 57.62, "lng": -6.21, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/634507093733635767", "rating": 4.5,
+      "note": "Superhost, Staffin (cœur de Trotternish, proche Quiraing/Storr). Aussi sur Vrbo (5290816ha ~€1081). Fait les 3 NUITS 9→12. LE MOINS CHER on-island sur 3 nuits hors pod.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 891, "price_pn_eur": 297, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:ferry-house-sconser",
+      "name": "The Ferry House", "type": "holiday_home", "town": "Sconser", "region": "skye",
+      "lat": 57.32, "lng": -6.10, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/1710399966203877691", "rating": null,
+      "note": "2 chambres, Sconser (central, sur la route Portree-Broadford). Listing récent. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 1113, "price_pn_eur": 371, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:croft-at-thistles-isleornsay",
+      "name": "The Croft at Thistles on Skye", "type": "holiday_home", "town": "Isleornsay (Sleat)", "region": "skye",
+      "lat": 57.14, "lng": -5.80, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/580185488846552607", "rating": 5.0,
+      "note": "Top guest favorite (5.0/64), Sleat. Aussi sur Vrbo (11275197ha ~€1426). Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 1357, "price_pn_eur": 452, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "airbnb:cottage-by-sea-culnacnoc",
+      "name": "Cottage by the Sea", "type": "holiday_home", "town": "Culnacnoc (Trotternish)", "region": "skye",
+      "lat": 57.56, "lng": -6.18, "source": "airbnb",
+      "url": "https://www.airbnb.com/rooms/12484106", "rating": 4.91,
+      "note": "Cottage bord de mer 3 chambres (111 avis), Trotternish nord-est (proche Storr/Quiraing). Remisé de €1701. Fait les 3 NUITS 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 1474, "price_pn_eur": 491, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:kingsburgh-1bed-apt",
+      "name": "One bedroom Apartment, Kingsburgh", "type": "holiday_home", "town": "Kingsburgh (Trotternish)", "region": "skye",
+      "lat": 57.50, "lng": -6.34, "source": "vrbo",
+      "url": "https://www.vrbo.com/11031498ha", "rating": null,
+      "note": "Annulation gratuite jusqu'au 26 juil. Fait les 3 NUITS 9→12. (prix USD$995→€915)",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 915, "price_pn_eur": 305, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:wow-seaview-kilmuir",
+      "name": "Wow sea-view contemporary home", "type": "holiday_home", "town": "Kilmuir (Trotternish)", "region": "skye",
+      "lat": 57.61, "lng": -6.32, "source": "vrbo",
+      "url": "https://www.vrbo.com/11930202ha", "rating": 10,
+      "note": "10/10 mais COMPLET 3 nuits 9→12. À retenter sur autre fenêtre.",
+      "obs": [{"window": "2026-08-09_12", "status": "sold_out", "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:asynt-portree",
+      "name": "Asynt", "type": "holiday_home", "town": "Portree", "region": "skye",
+      "lat": 57.41, "lng": -6.19, "source": "vrbo",
+      "url": "https://www.vrbo.com/11583028ha", "rating": 10,
+      "note": "10/10 (10 avis) mais COMPLET 3 nuits 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "sold_out", "checked": "2026-06-23"}]
+    },
+    {
+      "id": "vrbo:drumgarry-skye",
+      "name": "Drumgarry — Skye house, sea views", "type": "holiday_home", "town": "Skye", "region": "skye",
+      "lat": 57.40, "lng": -6.20, "source": "vrbo",
+      "url": "https://www.vrbo.com/10255350ha", "rating": 9.6,
+      "note": "9.6/10 mais COMPLET 3 nuits 9→12.",
+      "obs": [{"window": "2026-08-09_12", "status": "sold_out", "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:tower-ridge-house-fort-william",
+      "name": "Tower Ridge House", "type": "guest_house", "town": "Torlundy (Fort William)", "region": "highlands",
+      "lat": 56.853, "lng": -5.058, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/tower-ridge-house-fort-william.html", "rating": 9.2,
+      "note": "BASE CHOISIE étape Fort William (remplace Ossians, complet). 9.2, sous le Ben Nevis, ~7km N de FW. €418/2n.",
+      "obs": [{"window": "2026-08-07_09", "status": "available", "price_total_eur": 417, "price_pn_eur": 209, "checked": "2026-06-23"}]
+    },
+    {
+      "id": "booking:torlinnhe-fort-william",
+      "name": "Torlinnhe Guest House", "type": "guest_house", "town": "Fort William", "region": "highlands",
+      "lat": 56.80, "lng": -5.12, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/torlinnhe-guest-house.html", "rating": 9.4,
+      "note": "Alt Fort William, bord du loch (Achintore Rd). Mieux noté mais plus cher.",
+      "obs": [{"window": "2026-08-07_09", "status": "available", "price_total_eur": 612, "price_pn_eur": 306, "checked": "2026-06-23"}]
+    }
+  ]
+}
