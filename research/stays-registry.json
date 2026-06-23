@@ -223,7 +223,7 @@
       "note": "Cottage 5 pers., Premier Host, 10/10 (263 avis), nord Trotternish. VERDICT 23/6 : dispo SEULEMENT en blocs de 2 nuits — AUCUNE fenêtre de 3 nuits en août 2026 (8 testées, toutes complètes, méthode validée par contrôle octobre). Ne pas re-tester sur 3 nuits.",
       "obs": [
         {"window": "2026-08-05_07", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"},
-        {"window": "2026-08-09_11", "status": "available", "price_pn_eur": null, "checked": "2026-06-23"},
+        {"window": "2026-08-09_11", "status": "sold_out", "checked": "2026-06-23", "note": "était available au 1er scan, complet à la re-vérif quelques jours plus tard — inventory se remplit"},
         {"window": "2026-08-05_08", "status": "sold_out", "checked": "2026-06-23", "note": "et toutes les fenêtres 3 nuits jusqu'au 13-16"}
       ]
     },
