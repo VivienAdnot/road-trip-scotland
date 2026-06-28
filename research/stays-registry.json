@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Springburn Farmhouse 6→9 (3n, €702) · Skye Harlosh Stargazer Pod 9→12 (3n, €671) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 022. Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j).",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Springburn Farmhouse 6→9 (3n, €702) · Skye Harlosh Stargazer Pod 9→12 (3n, €671) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 022. Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (seul direct après 13h) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 125.",
     "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
