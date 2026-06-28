@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Springburn Farmhouse 6→9 (3n, €702) · Skye Harlosh Stargazer Pod 9→12 (3n, €671) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 022. Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 125.",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Beinn Edra House (Staffin) 9→12 (3n, €573) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €1 882. NB: les 1ers choix Springburn (Glencoe) ET Harlosh (Skye) sont tombés le 28/6 après-midi — remplacés par Acorn + Beinn Edra sur le MÊME créneau (tous deux mieux notés/moins chers). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €3 990.",
     "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
@@ -335,10 +335,11 @@
       "name": "Harlosh Hideaways — Stargazer Pod", "type": "holiday_home", "town": "Harlosh (près Dunvegan)", "region": "skye",
       "lat": 57.3836, "lng": -6.510163, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html", "rating": 9.9,
-      "note": "PÉPITE : mieux noté de tout le scan (9.9/100). Pod adults-only NW Skye, ciel étoilé. Fait les 3 NUITS 9→12.",
+      "note": "Était LA pépite (9.9/100), pod adults-only NW Skye. PERDUE : complète 9→12 le 28/06 après-midi, sur TOUS les canaux (Booking ×2 vérifs, pas de listing Airbnb/Vrbo, site proprio renvoie sur Booking). Seul longshot = email proprio harloshhideaways.co.uk pour annulation (non pariable). Remplacée par Beinn Edra.",
       "obs": [
         {"window": "2026-08-09_12", "status": "available", "price_total_eur": 677, "price_pn_eur": 226, "checked": "2026-06-23"},
-        {"window": "2026-08-09_12", "status": "available", "price_total_eur": 671, "price_pn_eur": 224, "checked": "2026-06-28", "note": "re-confirmée par coords; inchangée"}
+        {"window": "2026-08-09_12", "status": "available", "price_total_eur": 671, "price_pn_eur": 224, "checked": "2026-06-28", "note": "dispo le matin"},
+        {"window": "2026-08-09_12", "status": "sold_out", "checked": "2026-06-28", "note": "PM : complet partout (capture user + agent multi-canaux)"}
       ]
     },
     {
@@ -456,10 +457,11 @@
       "name": "Springburn Farmhouse", "type": "guest_house", "town": "Spean Bridge (Lochaber)", "region": "highlands",
       "lat": 56.886, "lng": -4.917, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/springburn-farm-house.html", "rating": 9.5,
-      "note": "BASE GLENCOE LOCKÉE (Trip ①, 3 nuits 6→9). Ferme highland 4★ adults-only, meilleur rapport qualité/prix high-rated. ~15 min N de Fort William : idéal Glen Nevis + Glenfinnan + Ben Nevis ; Glen Coe à ~40 min.",
+      "note": "Était la base Glencoe lockée (Trip ①, 3n 6→9). COMPLET à la re-vérif du 28/06 après-midi — remplacement en cours. Skye inventory-style: parti en quelques heures.",
       "obs": [
         {"window": "2026-08-07_09", "status": "available", "price_total_eur": 481, "price_pn_eur": 240, "checked": "2026-06-28"},
-        {"window": "2026-08-06_09", "status": "available", "price_total_eur": 702, "price_pn_eur": 234, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}
+        {"window": "2026-08-06_09", "status": "available", "price_total_eur": 702, "price_pn_eur": 234, "checked": "2026-06-28", "note": "était lockée puis tombée le même jour"},
+        {"window": "2026-08-06_09", "status": "sold_out", "checked": "2026-06-28", "note": "PM : complet, base à remplacer"}
       ]
     },
     {
@@ -491,6 +493,38 @@
       "url": "https://www.booking.com/hotel/gb/riverbeds.html", "rating": 9.0,
       "note": "Splurge le plus romantique : jacuzzi privé, spa, massage en couple, piscine intérieure, resto sur place. Aux portes de la vallée de Glencoe. Alternative 3n à Springburn si on veut le hot-tub sans casser l'ancre.",
       "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 1998, "price_pn_eur": 666, "checked": "2026-06-28"}]
+    },
+    {
+      "id": "booking:acorn-cottage-muirshearlich",
+      "name": "Acorn Cottage & Little Oaks", "type": "holiday_home", "town": "Muirshearlich (Fort William)", "region": "highlands",
+      "lat": 56.876, "lng": -5.130, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/acorn-cottage-fort-william.html", "rating": 9.5,
+      "note": "BASE GLENCOE LOCKÉE (remplace Springburn tombé). Cottage de campagne avec jardin, NW de Fort William, près du canal calédonien / route de Glenfinnan. Glen Nevis + Ben Nevis ~15 min, Glenfinnan ~30 min, Glen Coe ~40 min. ~47 avis (petit échantillon) mais 9.5.",
+      "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 660, "price_pn_eur": 220, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}]
+    },
+    {
+      "id": "booking:bunroy-park-roy-bridge",
+      "name": "Bunroy Park", "type": "holiday_home", "town": "Roy Bridge (Spean Bridge)", "region": "highlands",
+      "lat": 56.888, "lng": -4.838, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/timber-lodge.html", "rating": 9.9,
+      "note": "Alternative Glencoe step-up : lodges riverside, le mieux noté (9.9). Roy Bridge, ~25 min Glen Nevis.",
+      "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 1028, "price_pn_eur": 343, "checked": "2026-06-28"}]
+    },
+    {
+      "id": "booking:beinn-edra-house-staffin",
+      "name": "Beinn Edra House", "type": "bed_and_breakfast", "town": "Staffin (Trotternish)", "region": "skye",
+      "lat": 57.620, "lng": -6.210, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/beinn-edra-house-b-amp-b.html", "rating": 9.8,
+      "note": "BASE SKYE LOCKÉE (remplace Harlosh tombé). B&B le mieux noté on-island (9.8/252 avis) ET le moins cher. Staffin, cœur du Trotternish : Quiraing ~10 min, Old Man of Storr ~12 min — bien mieux placé que Harlosh (NW) pour les icônes. B&B (pas self-catering).",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 573, "price_pn_eur": 191, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}]
+    },
+    {
+      "id": "booking:ardvreck-chalet-kyleakin",
+      "name": "Ardvreck Chalet (self-catering)", "type": "holiday_home", "town": "Kyleakin (SE Skye)", "region": "skye",
+      "lat": 57.27, "lng": -5.74, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/ardvreck-chalet-self-catering.html", "rating": 9.5,
+      "note": "Alternative Skye self-catering (si on veut le 'chez nous' privé que Harlosh offrait). 9.5/118 avis, près du pont de Skye. Mais SE de l'île, ~45 min des icônes du Trotternish.",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 826, "price_pn_eur": 275, "checked": "2026-06-28"}]
     }
   ]
 }

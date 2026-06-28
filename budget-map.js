@@ -16,22 +16,22 @@ const STAYS=[
     url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-04&checkout=2026-08-06&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'highlands', lat:56.886, lng:-4.917, star:false,
-    area:'Étape 2 · Glencoe & Lochaber — Spean Bridge', best:'Springburn Farmhouse',
-    price:234, window:'6–9/8 · 3 nuits', rating:'9.5/10', hero:'img/stage-glencoe-highlands.jpg',
-    pois:[['Nevis Range / Ben Nevis','~15 min'],['Steall Falls (Glen Nevis)','~25 min'],['Viaduc de Glenfinnan','~35 min'],['Three Sisters (Glen Coe)','~40 min']],
-    alts:'Tower Ridge ET Torlinnhe sont complets aux dates → Springburn (9.5, ferme adults-only, meilleur rapport qualité/prix). Sinon Aos Si Lodges €385/n (9.5, lodges jacuzzi à Glencoe) · RiverBeds €666/n (splurge spa + jacuzzi privé).',
-    note:'Re-vérifié le 28/6. Ferme 4★ adults-only à Spean Bridge, ~15 min nord de Fort William : idéal Glen Nevis + Glenfinnan + Ben Nevis, Glen Coe à ~40 min. €702 les 3 nuits.',
-    url:'https://www.booking.com/hotel/gb/springburn-farm-house.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'highlands', lat:56.876, lng:-5.130, star:false,
+    area:'Étape 2 · Glencoe & Lochaber — Muirshearlich (Fort William)', best:'Acorn Cottage & Little Oaks',
+    price:220, window:'6–9/8 · 3 nuits', rating:'9.5/10', hero:'img/stage-glencoe-highlands.jpg',
+    pois:[['Nevis Range / Ben Nevis','~15 min'],['Steall Falls (Glen Nevis)','~15 min'],['Viaduc de Glenfinnan','~30 min'],['Three Sisters (Glen Coe)','~40 min']],
+    alts:'Springburn (lockée) est tombée le 28/6 → Acorn Cottage (9.5, cottage de caractère avec jardin, le moins cher du créneau). Sinon Bunroy Park €1028 (9.9, lodges riverside) · RiverBeds €1998 (splurge jacuzzi privé).',
+    note:'Re-vérifié le 28/6. Cottage de campagne 9.5 à Muirshearlich, NW de Fort William : idéal Glen Nevis + Glenfinnan + Ben Nevis, Glen Coe à ~40 min. €660 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/acorn-cottage-fort-william.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'skye', lat:57.3836, lng:-6.510, star:true,
-    area:'Étape 3 · Isle of Skye — Harlosh (NW)', best:'Harlosh Stargazer Pod',
-    price:224, window:'9–12/8 · 3 nuits', rating:'9.9/10', hero:'img/stage-isle-of-skye.jpg',
-    pois:[['Château de Dunvegan','~20 min'],['Neist Point (phare)','~35 min'],['Fairy Pools (Glen Brittle)','~40 min'],['Old Man of Storr / Quiraing','~50–60 min']],
-    alts:'LA pépite : 9.9/100 avis, le mieux noté ET le moins cher des 3 nuits dispo sur l’île. Pod ciel étoilé, adultes. Plus près des icônes (au pied du Storr) : Keeper’s Cottage Staffin €297, Cottage by the Sea Culnacnoc €491 (3 ch, bord de mer).',
-    note:'★ Le point fort du séjour. NW de l’île : ~50 min des icônes du Trotternish (Storr/Quiraing) mais aux portes de Neist Point, Dunvegan et des Fairy Pools. Booking annonçait Skye « complet » — un mirage hôtelier : le self-catering est dispo. Re-confirmé le 28/6 : €671 les 3 nuits.',
-    url:'https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'skye', lat:57.620, lng:-6.210, star:true,
+    area:'Étape 3 · Isle of Skye — Staffin (Trotternish)', best:'Beinn Edra House',
+    price:191, window:'9–12/8 · 3 nuits', rating:'9.8/10', hero:'img/stage-isle-of-skye.jpg',
+    pois:[['Quiraing','~10 min'],['Old Man of Storr','~12 min'],['Portree (port)','~20 min'],['Neist Point (phare)','~1h10']],
+    alts:'Harlosh (la pépite initiale) a été pris le 28/6 → Beinn Edra (9.8, le mieux noté + le moins cher on-island, B&B). Self-catering encore dispo : Ardvreck Chalet €826 (9.5) · Cottage by the Sea Culnacnoc €1473 (front de mer, 10 min du Storr).',
+    note:'★ Le point fort du séjour. Staffin, cœur du Trotternish : au pied du Quiraing (~10 min) et de l’Old Man of Storr (~12 min), les deux icônes de l’île. B&B 9.8 (252 avis), le mieux noté on-island. Re-vérifié le 28/6 : €573 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/beinn-edra-house-b-amp-b.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'trossachs', lat:56.00, lng:-4.58, star:false,

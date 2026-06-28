@@ -128,12 +128,12 @@ const BASES = {
   },
 
   glencoe: {
-    name:'Glencoe & Lochaber', region:'highlands', lat:56.8860, lng:-4.9170,
+    name:'Glencoe & Lochaber', region:'highlands', lat:56.8760, lng:-5.1300,
     hero:'img/stage-glencoe-highlands.jpg',
-    tag:'Le cœur sauvage des Highlands · base Spean Bridge',
-    blurb:"Trois nuits d'ancrage au cœur du Lochaber, à la ferme <b>Springburn</b> (Spean Bridge, 9.5, adults-only). De là on rayonne sans rebouger les valises : Glen Nevis et le Ben Nevis à deux pas, le viaduc de Glenfinnan à l'ouest, la vallée dramatique de Glen Coe au sud. Pubs trad et auberges de montagne.",
-    lodging:"Springburn Farmhouse (Spean Bridge), ferme 4★ adults-only pour les 3 nuits. Clachaig Inn / Ben Nevis Inn pour les bières au coin du feu.",
-    radius:"Glen Nevis & Nevis Range à ≤ 20 min, Glenfinnan ~35 min, Glen Coe ~40 min, jusqu'à Oban (~1h20).",
+    tag:'Le cœur sauvage des Highlands · base Fort William (Muirshearlich)',
+    blurb:"Trois nuits d'ancrage au cœur du Lochaber, à <b>Acorn Cottage</b> (Muirshearlich, 9.5, cottage de caractère avec jardin, NW de Fort William). De là on rayonne sans rebouger les valises : Glen Nevis et le Ben Nevis à deux pas, le viaduc de Glenfinnan à l'ouest, la vallée dramatique de Glen Coe au sud. Pubs trad et auberges de montagne.",
+    lodging:"Acorn Cottage & Little Oaks (Muirshearlich), cottage de campagne avec jardin pour les 3 nuits. Clachaig Inn / Ben Nevis Inn pour les bières au coin du feu.",
+    radius:"Glen Nevis & Nevis Range à ≤ 15 min, Glenfinnan ~30 min, Glen Coe ~40 min, jusqu'à Oban (~1h20).",
     activities:[
       {name:'Rando Lost Valley (Coire Gabhail)', type:'rando', lat:56.6700, lng:-4.9800, drive:45, intensity:3, time:'2h30-3h', must:true, img:W.steall,
        desc:"La 'vallée cachée' où le clan MacDonald planquait son bétail : passage de rivière, gorge, amphithéâtre de montagnes. Sentier rocailleux, chaussures sérieuses.", tip:"Pas après de fortes pluies (gué de rivière)."},
@@ -141,9 +141,9 @@ const BASES = {
        desc:"Les trois éperons mythiques de la vallée depuis le belvédère de la route A82. Arrêt photo incontournable."},
       {name:'Glen Etive (route Skyfall)', type:'vue', lat:56.6200, lng:-4.9900, drive:50, intensity:1, time:'1-2 h', must:false, img:'img/site-glen-etive.jpg',
        desc:"Petite route en cul-de-sac le long d'une rivière (le décor final de Skyfall). Cerfs, cascades, solitude. Aller-retour tranquille en voiture.", tip:"Route étroite à voie unique : patience aux 'passing places'."},
-      {name:'Viaduc de Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:35, intensity:2, time:'demi-journée', must:true, img:'img/site-viaduc-de-glenfinnan.jpg',
+      {name:'Viaduc de Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:30, intensity:2, time:'demi-journée', must:true, img:'img/site-viaduc-de-glenfinnan.jpg',
        desc:"Le viaduc d'Harry Potter ; le Jacobite (train à vapeur) le franchit vers 11h et 15h. Court sentier jusqu'au point de vue.", tip:"Arriver tôt, le parking sature ; viser l'horaire de passage du train."},
-      {name:'Steall Falls (Glen Nevis)', type:'rando', lat:56.7700, lng:-4.9700, drive:25, intensity:2, time:'2h', must:false, img:W.steall,
+      {name:'Steall Falls (Glen Nevis)', type:'rando', lat:56.7700, lng:-4.9700, drive:15, intensity:2, time:'2h', must:false, img:W.steall,
        desc:"Sentier de gorge le long de la rivière jusqu'à une grande cascade de 120 m et sa prairie suspendue. Très Tolkien."},
       {name:'Nevis Range (télécabine)', type:'vue', lat:56.8200, lng:-5.0080, drive:15, intensity:1, time:'demi-journée', must:false, img:W.nevisRange,
        desc:"Télécabine au-dessus de Fort William : altitude facile, vue sur le Ben Nevis et les Aonachs sans suer.", tip:"Plan B parfait par météo moyenne."},
@@ -155,7 +155,7 @@ const BASES = {
        desc:"Immense tourbière sauvage avant d'entrer dans Glencoe : un des paysages les plus vides et beaux d'Écosse. Arrêt sur la route."},
       {name:'Ardnamurchan (péninsule)', type:'nature', lat:56.7270, lng:-6.2290, drive:95, intensity:2, time:'journée', must:false, img:W.ardnamurchan,
        desc:"Le point le plus à l'ouest de l'île de Grande-Bretagne : phare, plages désertes, route sauvage. Journée entière, peu de monde."},
-      {name:'Ben Nevis (sommet)', type:'rando', lat:56.7969, lng:-5.0036, drive:20, intensity:3, time:'7-9 h', must:false, img:W.benNevis,
+      {name:'Ben Nevis (sommet)', type:'rando', lat:56.7969, lng:-5.0036, drive:15, intensity:3, time:'7-9 h', must:false, img:W.benNevis,
        desc:"Le plus haut sommet de Grande-Bretagne (1345 m). Longue journée exigeante — <b>hors de notre style</b> (pas de mode hardcore), mentionné pour info.", tip:"On préfère Steall Falls ou la télécabine pour les vues."},
       {name:'Clachaig Inn', type:'pub', lat:56.6770, lng:-5.0830, drive:40, intensity:1, time:'soirée', must:false, img:'',
        desc:"Pub-auberge mythique des grimpeurs au fond de la vallée : real ales, feu de cheminée, ambiance Highlands. Ben Nevis Inn juste à côté de la base."}
@@ -182,30 +182,30 @@ const BASES = {
   },
 
   skye: {
-    name:'Isle of Skye', region:'skye', lat:57.4125, lng:-6.1956,
+    name:'Isle of Skye', region:'skye', lat:57.6200, lng:-6.2100,
     hero:'img/stage-isle-of-skye.jpg',
-    tag:"L'île-vedette · à savourer lentement",
+    tag:"L'île-vedette · base Staffin (Trotternish)",
     blurb:"L'île aux paysages les plus spectaculaires : pinacles du Storr, plateau du Quiraing, piscines turquoise, falaises et phares. Mérite plusieurs jours — on la <b>réserve très tôt</b>, elle se remplit.",
-    lodging:"Base à Portree (capitale de l'île) ou autour : Carbost, Dunvegan, Sligachan. Pubs : The Old Inn (Carbost), Sligachan, Stein Inn.",
-    radius:"L'île entière à ≤ 1h de Portree, mais routes étroites = on prévoit large.",
+    lodging:"Base à Staffin (Beinn Edra House, 9.8) au cœur du Trotternish — au pied du Quiraing et de l'Old Man of Storr. Pubs : Sligachan, Stein Inn, et les restos du port de Portree.",
+    radius:"Les icônes du Trotternish à ≤ 15 min ; l'ouest de l'île (Fairy Pools, Neist) à la journée. Routes étroites = on prévoit large.",
     activities:[
-      {name:'Old Man of Storr', type:'rando', lat:57.5072, lng:-6.1844, drive:20, intensity:2, time:'1h30-2h', must:true, img:'img/site-old-man-of-storr.jpg',
+      {name:'Old Man of Storr', type:'rando', lat:57.5072, lng:-6.1844, drive:12, intensity:2, time:'1h30-2h', must:true, img:'img/site-old-man-of-storr.jpg',
        desc:"Le pinacle le plus célèbre d'Écosse : montée régulière jusqu'au pied des aiguilles de roche, vue sur la mer et les Cuillin. Tôt le matin ou en soirée.", tip:"Parking payant qui sature de 10h à 16h."},
-      {name:'Quiraing (circuit)', type:'rando', lat:57.6433, lng:-6.2706, drive:35, intensity:2, time:'2-3 h', must:true, img:'img/site-quiraing.jpg',
+      {name:'Quiraing (circuit)', type:'rando', lat:57.6433, lng:-6.2706, drive:10, intensity:2, time:'2-3 h', must:true, img:'img/site-quiraing.jpg',
        desc:"Plateau d'effondrement irréel : tours, plateaux suspendus, table verte. Sentier en balcon, parfois étroit et boueux. Le clou de Skye.", tip:"Vent fort fréquent ; semelles qui accrochent."},
-      {name:'Fairy Pools', type:'rando', lat:57.2498, lng:-6.2616, drive:45, intensity:2, time:'1h30-2h', must:false, img:W.fairyPools,
+      {name:'Fairy Pools', type:'rando', lat:57.2498, lng:-6.2616, drive:60, intensity:2, time:'1h30-2h', must:false, img:W.fairyPools,
        desc:"Enfilade de bassins turquoise et cascades au pied des Cuillin Noires. Sentier plat mais quelques gués. Baignade glaciale possible.", tip:"Tôt le matin : parking et sentier vite bondés."},
-      {name:'Neist Point (phare)', type:'vue', lat:57.4236, lng:-6.7886, drive:55, intensity:2, time:'1h30', must:false, img:'img/site-neist-point.jpg',
+      {name:'Neist Point (phare)', type:'vue', lat:57.4236, lng:-6.7886, drive:70, intensity:2, time:'1h30', must:false, img:'img/site-neist-point.jpg',
        desc:"Le point le plus à l'ouest de Skye : falaises, phare, couchers de soleil légendaires. Descente raide puis sentier le long de la falaise."},
-      {name:'Distillerie Talisker (Carbost)', type:'distillerie', lat:57.3030, lng:-6.3540, drive:35, intensity:1, time:'1h30', must:false, img:W.talisker,
+      {name:'Distillerie Talisker (Carbost)', type:'distillerie', lat:57.3030, lng:-6.3540, drive:50, intensity:1, time:'1h30', must:false, img:W.talisker,
        desc:"Le single malt tourbé emblématique de Skye, au bord du Loch Harport. Visite + dégustation. Oyster Shed juste à côté.", tip:"Réserver la visite en haute saison."},
-      {name:'Portree (port)', type:'village', lat:57.4125, lng:-6.1956, drive:0, intensity:1, time:'2 h', must:false, img:W.portree,
+      {name:'Portree (port)', type:'village', lat:57.4125, lng:-6.1956, drive:20, intensity:1, time:'2 h', must:false, img:W.portree,
        desc:"Le port aux maisons colorées, cœur de l'île : cafés, restos de poisson, départ de balades. Base pratique pour le soir."},
-      {name:'Sligachan & Cuillin', type:'vue', lat:57.2890, lng:-6.1700, drive:25, intensity:1, time:'1 h', must:false, img:W.sligachan,
+      {name:'Sligachan & Cuillin', type:'vue', lat:57.2890, lng:-6.1700, drive:35, intensity:1, time:'1 h', must:false, img:W.sligachan,
        desc:"Vieux pont de pierre devant les Cuillin déchiquetées : l'un des panoramas les plus photographiés d'Écosse. Pub-hôtel sur place."},
-      {name:'Elgol (bateau vers les Cuillin)', type:'bateau', lat:57.1450, lng:-6.1100, drive:50, intensity:2, time:'demi-journée', must:false, img:'',
+      {name:'Elgol (bateau vers les Cuillin)', type:'bateau', lat:57.1450, lng:-6.1100, drive:65, intensity:2, time:'demi-journée', must:false, img:'',
        desc:"Petit port au sud ; bateau vers Loch Coruisk, au pied des Cuillin (phoques en chemin). Vue spectaculaire sur les montagnes depuis la mer."},
-      {name:'Plockton (sur la route)', type:'village', lat:57.3340, lng:-5.6560, drive:60, intensity:1, time:'1-2 h', must:false, img:W.plockton,
+      {name:'Plockton (sur la route)', type:'village', lat:57.3340, lng:-5.6560, drive:80, intensity:1, time:'1-2 h', must:false, img:W.plockton,
        desc:"Hameau de palmiers (!) et de bateaux côté terre ferme, avant/après le pont de Skye. Idéal sur le trajet d'arrivée ou de départ."}
     ]
   },
@@ -242,7 +242,7 @@ const TRIPS = {
     tagline:"Le compromis d’Audrey entre le court et le long : 4 grosses bases, peu de valises défaites, et 3 nuits sur Skye pour la savourer. Une seule grosse route (Skye → Loch Lomond), mais c’est la plus mythique.",
     intensity:'🟡 équilibré',
     hero:'img/stage-isle-of-skye.jpg',
-    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits autour d’une pépite : le Harlosh Stargazer Pod (9.9/10), au nord-ouest de l’île — aux portes de Neist Point, Dunvegan et des Fairy Pools, à ~50 min des icônes du Trotternish (Old Man of Storr, Quiraing). Hébergements & budget détaillés dans l’onglet 💷 Budget.",
+    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits depuis Beinn Edra House (9.8/10) à Staffin, au cœur du Trotternish — à ~10 min du Quiraing et ~12 min de l’Old Man of Storr (les deux icônes de l’île), avec Neist Point et les Fairy Pools accessibles à la journée. Hébergements & budget détaillés dans l’onglet 💷 Budget.",
     bases:[
       {base:'edinburgh', nights:2},
       {base:'glencoe',   nights:3},
@@ -254,13 +254,13 @@ const TRIPS = {
        stops:[
          {at:'Château de Stirling', seg:'1h', why:'château + déjeuner sur le départ'},
          {at:'Tyndrum (Green Welly)', seg:'1h', why:'pause café / essence'},
-         {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Spean Bridge'}
+         {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Muirshearlich (Acorn Cottage)'}
        ]},
       {from:'glencoe', to:'skye', via:'Loch Garry · Eilean Donan', drive:'~2h30 de conduite',
        stops:[
          {at:'Loch Garry (viewpoint)', seg:'45 min', why:'le loch en forme de carte d’Écosse, plein ouest'},
          {at:'Eilean Donan', seg:'1h', why:'le château sur son îlot — arrêt culte'},
-         {at:'Sligachan', seg:'45 min', why:'les Cuillin avant d’arriver à Harlosh'}
+         {at:'Sligachan → Portree → Staffin', seg:'1h', why:'les Cuillin, puis le port de Portree avant Beinn Edra (Staffin)'}
        ]},
       {from:'skye', to:'lomond', via:'Glen Shiel · Glencoe · Rannoch Moor', drive:'~4h de conduite', warn:true,
        stops:[
