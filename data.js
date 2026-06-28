@@ -182,30 +182,30 @@ const BASES = {
   },
 
   skye: {
-    name:'Isle of Skye', region:'skye', lat:57.6200, lng:-6.2100,
+    name:'Isle of Skye', region:'skye', lat:57.2756, lng:-5.7385,
     hero:'img/stage-isle-of-skye.jpg',
-    tag:"L'île-vedette · base Staffin (Trotternish)",
+    tag:"L'île-vedette · base Kyleakin (pont de Skye)",
     blurb:"L'île aux paysages les plus spectaculaires : pinacles du Storr, plateau du Quiraing, piscines turquoise, falaises et phares. Mérite plusieurs jours — on la <b>réserve très tôt</b>, elle se remplit.",
-    lodging:"Base à Staffin (Beinn Edra House, 9.8) au cœur du Trotternish — au pied du Quiraing et de l'Old Man of Storr. Pubs : Sligachan, Stein Inn, et les restos du port de Portree.",
-    radius:"Les icônes du Trotternish à ≤ 15 min ; l'ouest de l'île (Fairy Pools, Neist) à la journée. Routes étroites = on prévoit large.",
+    lodging:"Base à Kyleakin (Ardvreck Chalet, self-catering 9.5), à 2 min du pont de Skye — la porte d'entrée SE de l'île. Pubs : Saucy Mary's (Kyleakin), Sligachan sur la route.",
+    radius:"Sud de l'île proche (Sligachan ~30 min, Fairy Pools / Elgol ~45-50 min) ; les icônes du Trotternish (Storr ~50 min, Quiraing ~1h10) en sortie d'une journée. Routes étroites = on prévoit large.",
     activities:[
-      {name:'Old Man of Storr', type:'rando', lat:57.5072, lng:-6.1844, drive:12, intensity:2, time:'1h30-2h', must:true, img:'img/site-old-man-of-storr.jpg',
+      {name:'Old Man of Storr', type:'rando', lat:57.5072, lng:-6.1844, drive:50, intensity:2, time:'1h30-2h', must:true, img:'img/site-old-man-of-storr.jpg',
        desc:"Le pinacle le plus célèbre d'Écosse : montée régulière jusqu'au pied des aiguilles de roche, vue sur la mer et les Cuillin. Tôt le matin ou en soirée.", tip:"Parking payant qui sature de 10h à 16h."},
-      {name:'Quiraing (circuit)', type:'rando', lat:57.6433, lng:-6.2706, drive:10, intensity:2, time:'2-3 h', must:true, img:'img/site-quiraing.jpg',
+      {name:'Quiraing (circuit)', type:'rando', lat:57.6433, lng:-6.2706, drive:70, intensity:2, time:'2-3 h', must:true, img:'img/site-quiraing.jpg',
        desc:"Plateau d'effondrement irréel : tours, plateaux suspendus, table verte. Sentier en balcon, parfois étroit et boueux. Le clou de Skye.", tip:"Vent fort fréquent ; semelles qui accrochent."},
-      {name:'Fairy Pools', type:'rando', lat:57.2498, lng:-6.2616, drive:60, intensity:2, time:'1h30-2h', must:false, img:W.fairyPools,
+      {name:'Fairy Pools', type:'rando', lat:57.2498, lng:-6.2616, drive:45, intensity:2, time:'1h30-2h', must:false, img:W.fairyPools,
        desc:"Enfilade de bassins turquoise et cascades au pied des Cuillin Noires. Sentier plat mais quelques gués. Baignade glaciale possible.", tip:"Tôt le matin : parking et sentier vite bondés."},
-      {name:'Neist Point (phare)', type:'vue', lat:57.4236, lng:-6.7886, drive:70, intensity:2, time:'1h30', must:false, img:'img/site-neist-point.jpg',
+      {name:'Neist Point (phare)', type:'vue', lat:57.4236, lng:-6.7886, drive:80, intensity:2, time:'1h30', must:false, img:'img/site-neist-point.jpg',
        desc:"Le point le plus à l'ouest de Skye : falaises, phare, couchers de soleil légendaires. Descente raide puis sentier le long de la falaise."},
       {name:'Distillerie Talisker (Carbost)', type:'distillerie', lat:57.3030, lng:-6.3540, drive:50, intensity:1, time:'1h30', must:false, img:W.talisker,
        desc:"Le single malt tourbé emblématique de Skye, au bord du Loch Harport. Visite + dégustation. Oyster Shed juste à côté.", tip:"Réserver la visite en haute saison."},
-      {name:'Portree (port)', type:'village', lat:57.4125, lng:-6.1956, drive:20, intensity:1, time:'2 h', must:false, img:W.portree,
+      {name:'Portree (port)', type:'village', lat:57.4125, lng:-6.1956, drive:40, intensity:1, time:'2 h', must:false, img:W.portree,
        desc:"Le port aux maisons colorées, cœur de l'île : cafés, restos de poisson, départ de balades. Base pratique pour le soir."},
-      {name:'Sligachan & Cuillin', type:'vue', lat:57.2890, lng:-6.1700, drive:35, intensity:1, time:'1 h', must:false, img:W.sligachan,
+      {name:'Sligachan & Cuillin', type:'vue', lat:57.2890, lng:-6.1700, drive:30, intensity:1, time:'1 h', must:false, img:W.sligachan,
        desc:"Vieux pont de pierre devant les Cuillin déchiquetées : l'un des panoramas les plus photographiés d'Écosse. Pub-hôtel sur place."},
-      {name:'Elgol (bateau vers les Cuillin)', type:'bateau', lat:57.1450, lng:-6.1100, drive:65, intensity:2, time:'demi-journée', must:false, img:'',
+      {name:'Elgol (bateau vers les Cuillin)', type:'bateau', lat:57.1450, lng:-6.1100, drive:50, intensity:2, time:'demi-journée', must:false, img:'',
        desc:"Petit port au sud ; bateau vers Loch Coruisk, au pied des Cuillin (phoques en chemin). Vue spectaculaire sur les montagnes depuis la mer."},
-      {name:'Plockton (sur la route)', type:'village', lat:57.3340, lng:-5.6560, drive:80, intensity:1, time:'1-2 h', must:false, img:W.plockton,
+      {name:'Plockton (sur la route)', type:'village', lat:57.3340, lng:-5.6560, drive:25, intensity:1, time:'1-2 h', must:false, img:W.plockton,
        desc:"Hameau de palmiers (!) et de bateaux côté terre ferme, avant/après le pont de Skye. Idéal sur le trajet d'arrivée ou de départ."}
     ]
   },
@@ -242,7 +242,7 @@ const TRIPS = {
     tagline:"Le compromis d’Audrey entre le court et le long : 4 grosses bases, peu de valises défaites, et 3 nuits sur Skye pour la savourer. Une seule grosse route (Skye → Loch Lomond), mais c’est la plus mythique.",
     intensity:'🟡 équilibré',
     hero:'img/stage-isle-of-skye.jpg',
-    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits depuis Beinn Edra House (9.8/10) à Staffin, au cœur du Trotternish — à ~10 min du Quiraing et ~12 min de l’Old Man of Storr (les deux icônes de l’île), avec Neist Point et les Fairy Pools accessibles à la journée. Hébergements & budget détaillés dans l’onglet 💷 Budget.",
+    note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits depuis Ardvreck Chalet (self-catering 9.5) à Kyleakin, au pied du pont de Skye — un « chez nous » privé d’où l’on rayonne : le sud de l’île (Sligachan, Fairy Pools, Elgol) tout proche, et les icônes du Trotternish (Old Man of Storr ~50 min, Quiraing ~1h10) sur une journée dédiée. Hébergements & budget détaillés dans l’onglet 💷 Budget.",
     bases:[
       {base:'edinburgh', nights:2},
       {base:'glencoe',   nights:3},
@@ -256,11 +256,11 @@ const TRIPS = {
          {at:'Tyndrum (Green Welly)', seg:'1h', why:'pause café / essence'},
          {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Muirshearlich (Acorn Cottage)'}
        ]},
-      {from:'glencoe', to:'skye', via:'Loch Garry · Eilean Donan', drive:'~2h30 de conduite',
+      {from:'glencoe', to:'skye', via:'Loch Garry · Eilean Donan', drive:'~2h15 de conduite',
        stops:[
          {at:'Loch Garry (viewpoint)', seg:'45 min', why:'le loch en forme de carte d’Écosse, plein ouest'},
          {at:'Eilean Donan', seg:'1h', why:'le château sur son îlot — arrêt culte'},
-         {at:'Sligachan → Portree → Staffin', seg:'1h', why:'les Cuillin, puis le port de Portree avant Beinn Edra (Staffin)'}
+         {at:'Pont de Skye → Kyleakin', seg:'30 min', why:'on franchit le pont, Ardvreck est juste de l’autre côté'}
        ]},
       {from:'skye', to:'lomond', via:'Glen Shiel · Glencoe · Rannoch Moor', drive:'~4h de conduite', warn:true,
        stops:[

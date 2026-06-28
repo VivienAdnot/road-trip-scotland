@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Beinn Edra House (Staffin) 9→12 (3n, €573) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €1 882. NB: les 1ers choix Springburn (Glencoe) ET Harlosh (Skye) sont tombés le 28/6 après-midi — remplacés par Acorn + Beinn Edra sur le MÊME créneau (tous deux mieux notés/moins chers). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €3 990.",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Ardvreck Chalet (Kyleakin, self-catering) 9→12 (3n, €826) ✓ RÉSERVÉ · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 135. NB: journée du 28/6 = 3 Skye tombés (Harlosh, puis Beinn Edra) avant qu'Ardvreck soit verrouillé ; Springburn (Glencoe) aussi tombé → Glencoe = Acorn Cottage (demande envoyée, réponse hôte sous 24h, PAS instantané → plan B instantané à garder). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 240.",
     "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
@@ -515,16 +515,19 @@
       "name": "Beinn Edra House", "type": "bed_and_breakfast", "town": "Staffin (Trotternish)", "region": "skye",
       "lat": 57.620, "lng": -6.210, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/beinn-edra-house-b-amp-b.html", "rating": 9.8,
-      "note": "BASE SKYE LOCKÉE (remplace Harlosh tombé). B&B le mieux noté on-island (9.8/252 avis) ET le moins cher. Staffin, cœur du Trotternish : Quiraing ~10 min, Old Man of Storr ~12 min — bien mieux placé que Harlosh (NW) pour les icônes. B&B (pas self-catering).",
-      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 573, "price_pn_eur": 191, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}]
+      "note": "Était le 2e choix Skye (remplaçait Harlosh). B&B 9.8/252 avis, Staffin, top placé (Quiraing ~10 min). TOMBÉ le 28/6 dans l'après-midi avant réservation → remplacé par Ardvreck.",
+      "obs": [
+        {"window": "2026-08-09_12", "status": "available", "price_total_eur": 573, "price_pn_eur": 191, "checked": "2026-06-28", "note": "dispo en début d'aprem"},
+        {"window": "2026-08-09_12", "status": "sold_out", "checked": "2026-06-28", "note": "pris avant qu'on réserve"}
+      ]
     },
     {
       "id": "booking:ardvreck-chalet-kyleakin",
       "name": "Ardvreck Chalet (self-catering)", "type": "holiday_home", "town": "Kyleakin (SE Skye)", "region": "skye",
       "lat": 57.27, "lng": -5.74, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/ardvreck-chalet-self-catering.html", "rating": 9.5,
-      "note": "Alternative Skye self-catering (si on veut le 'chez nous' privé que Harlosh offrait). 9.5/118 avis, près du pont de Skye. Mais SE de l'île, ~45 min des icônes du Trotternish.",
-      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 826, "price_pn_eur": 275, "checked": "2026-06-28"}]
+      "note": "BASE SKYE RÉSERVÉE ✓ (28/6). Chalet self-catering 9.5/118 avis à Kyleakin, au pied du pont de Skye — le 'chez nous' privé. SE de l'île : sud proche (Sligachan ~30 min), icônes du Trotternish en journée (Storr ~50 min, Quiraing ~1h10).",
+      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 826, "price_pn_eur": 275, "checked": "2026-06-28", "note": "FENÊTRE RÉSERVÉE (3n)"}]
     }
   ]
 }

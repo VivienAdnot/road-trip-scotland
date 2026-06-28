@@ -25,13 +25,13 @@ const STAYS=[
     url:'https://www.booking.com/hotel/gb/acorn-cottage-fort-william.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'skye', lat:57.620, lng:-6.210, star:true,
-    area:'Étape 3 · Isle of Skye — Staffin (Trotternish)', best:'Beinn Edra House',
-    price:191, window:'9–12/8 · 3 nuits', rating:'9.8/10', hero:'img/stage-isle-of-skye.jpg',
-    pois:[['Quiraing','~10 min'],['Old Man of Storr','~12 min'],['Portree (port)','~20 min'],['Neist Point (phare)','~1h10']],
-    alts:'Harlosh (la pépite initiale) a été pris le 28/6 → Beinn Edra (9.8, le mieux noté + le moins cher on-island, B&B). Self-catering encore dispo : Ardvreck Chalet €826 (9.5) · Cottage by the Sea Culnacnoc €1473 (front de mer, 10 min du Storr).',
-    note:'★ Le point fort du séjour. Staffin, cœur du Trotternish : au pied du Quiraing (~10 min) et de l’Old Man of Storr (~12 min), les deux icônes de l’île. B&B 9.8 (252 avis), le mieux noté on-island. Re-vérifié le 28/6 : €573 les 3 nuits.',
-    url:'https://www.booking.com/hotel/gb/beinn-edra-house-b-amp-b.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'skye', lat:57.2756, lng:-5.7385, star:true,
+    area:'Étape 3 · Isle of Skye — Kyleakin (pont de Skye)', best:'Ardvreck Chalet',
+    price:275, window:'9–12/8 · 3 nuits', rating:'9.5/10', hero:'img/stage-isle-of-skye.jpg',
+    pois:[['Sligachan & Cuillin','~30 min'],['Fairy Pools / Elgol','~45-50 min'],['Old Man of Storr','~50 min'],['Quiraing','~1h10']],
+    alts:'3e Skye perdu en un jour (Harlosh puis Beinn Edra) → Ardvreck Chalet RÉSERVÉ (self-catering 9.5, privé, au pont de Skye). Survivants si besoin : Skye-Fall €980 (9.0) · Cottage by the Sea €1473 (front de mer, Trotternish).',
+    note:'★ RÉSERVÉ. Chalet self-catering 9.5 (118 avis) à Kyleakin, au pied du pont de Skye : un « chez nous » privé. SE de l’île — sud proche (Sligachan ~30 min), icônes du Trotternish en journée (Storr ~50 min, Quiraing ~1h10). €826 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/ardvreck-chalet-self-catering.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'trossachs', lat:56.00, lng:-4.58, star:false,
