@@ -78,7 +78,7 @@ const BASES = {
     hero:'img/stage-dimbourg.jpg',
     tag:'Ville à pied · aucune voiture',
     blurb:"Le point d'entrée. Vieille ville médiévale, collines en pleine ville, sessions de musique trad le soir. On cale Édimbourg <b>avant le 7 août</b> : ville calme et prix normaux, le Fringe ne démarre que le 7.",
-    lodging:"Dormir côté Old Town / Stockbridge / Bruntsfield, à pied du centre. Pas de voiture : on la récupère seulement en partant vers les Highlands.",
+    lodging:"Point A Hotel Haymarket (West End) : compact mais bien placé, ~15-18 min à pied de l'Old Town. Pas de voiture en ville — on la récupère à l'aéroport le 6 (tram direct depuis Haymarket).",
     radius:"À pied + quelques échappées à ≤ 45 min en train/voiture.",
     activities:[
       {name:'Château + Royal Mile (tôt)', type:'château', lat:55.9486, lng:-3.1999, drive:0, intensity:1, time:'2-3 h', must:true, img:W.edCastle,
@@ -109,7 +109,7 @@ const BASES = {
     hero:'img/stage-loch-lomond-glasgow.jpg',
     tag:'Premier parc national · lochs et collines douces',
     blurb:"La transition entre ville et Highlands : grand loch, villages au bord de l'eau, collines faciles avec vues énormes. Parfait pour une première (ou dernière) respiration.",
-    lodging:"Base à Balmaha ou Luss, au bord du loch. Oak Tree Inn (Balmaha) = pub-auberge convivial.",
+    lodging:"Cottage 1 chambre avec jacuzzi privé à Glenfern (Balloch, sud du loch) pour la fin romantique. Oak Tree Inn (Balmaha) pour le dîner au bord de l'eau.",
     radius:"Tout à ≤ 45 min : rive du loch, Trossachs, Loch Katrine.",
     activities:[
       {name:'Rando Ben A’an', type:'rando', lat:56.2417, lng:-4.4050, drive:35, intensity:2, time:'2-3 h', must:true, img:W.benAan,

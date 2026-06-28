@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Ardvreck Chalet (Kyleakin, self-catering) 9→12 (3n, €826) ✓ RÉSERVÉ · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 135. NB: journée du 28/6 = 3 Skye tombés (Harlosh, puis Beinn Edra) avant qu'Ardvreck soit verrouillé ; Springburn (Glencoe) aussi tombé → Glencoe = Acorn Cottage (demande envoyée, réponse hôte sous 24h, PAS instantané → plan B instantané à garder). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 240.",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Point A Hotel Haymarket 4→6 (2n, €521) ✓ RÉSERVÉ · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Ardvreck Chalet (Kyleakin, self-catering) 9→12 (3n, €826) ✓ RÉSERVÉ · Loch Lomond Glenfern · Cottage 1 chambre avec jacuzzi privé 12→14 (2n, €417) ✓ RÉSERVÉ. Héberg. ≈ €2 424. STATUT 28/6 : Édimbourg + Skye + Loch Lomond RÉSERVÉS ✓ ; reste Glencoe = Acorn (demande en attente, réponse hôte sous 24h) avec plan B instantané Appin €799 (annulable jusqu'au 7/7). NB: journée du 28/6 = 3 Skye tombés (Harlosh, puis Beinn Edra) avant qu'Ardvreck soit verrouillé ; Springburn (Glencoe) aussi tombé → Glencoe = Acorn Cottage (demande envoyée, réponse hôte sous 24h, PAS instantané → plan B instantané à garder). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 530.",
     "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
@@ -63,10 +63,11 @@
       "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/glenfern-guest-house.html",
       "rating": 8.1,
-      "note": "Meilleur prix du séjour court.",
+      "note": "BASE LOCH LOMOND RÉSERVÉE ✓. 2 Drumkinnon Rd, Balloch G83 8SX. On a pris le 'Cottage 1 Chambre avec Bain à Remous' (bungalow entier, jacuzzi privé) — upgrade romantique vs la chambre guesthouse. Annulable jusqu'à l'arrivée. Résa n°5175408214.",
       "obs": [
         {"window": "2026-08-08_09", "status": "available", "price_pn_eur": 98, "checked": "2026-06-21"},
-        {"window": "2026-08-12_14", "status": "available", "price_total_eur": 301, "price_pn_eur": 151, "checked": "2026-06-28"}
+        {"window": "2026-08-12_14", "status": "available", "price_total_eur": 301, "price_pn_eur": 151, "checked": "2026-06-28", "note": "chambre guesthouse standard"},
+        {"window": "2026-08-12_14", "status": "booked", "room": "Cottage 1 ch. jacuzzi (bungalow entier)", "price_total_eur": 417, "price_pn_eur": 208, "checked": "2026-06-28", "note": "RÉSERVÉ ✓ n°5175408214"}
       ]
     },
     {
@@ -528,6 +529,14 @@
       "url": "https://www.booking.com/hotel/gb/ardvreck-chalet-self-catering.html", "rating": 9.5,
       "note": "BASE SKYE RÉSERVÉE ✓ (28/6). Chalet self-catering 9.5/118 avis à Kyleakin, au pied du pont de Skye — le 'chez nous' privé. SE de l'île : sud proche (Sligachan ~30 min), icônes du Trotternish en journée (Storr ~50 min, Quiraing ~1h10).",
       "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 826, "price_pn_eur": 275, "checked": "2026-06-28", "note": "FENÊTRE RÉSERVÉE (3n)"}]
+    },
+    {
+      "id": "booking:point-a-edinburgh-haymarket",
+      "name": "Point A Hotel Edinburgh Haymarket", "type": "hotel", "town": "Édimbourg (Haymarket / West End)", "region": "lothians",
+      "lat": 55.9445, "lng": -3.2178, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/point-a-edinburgh.html", "rating": 8.3,
+      "note": "BASE ÉDIMBOURG RÉSERVÉE ✓ (28/6). 152 Morrison St EH3 8EB. Hôtel value chambres compactes, note globale 8.3 (4 684 avis) mais EMPLACEMENT 9.0 (Haymarket : gare + tram aéroport direct, ~15-18 min à pied de l'Old Town). Chambre Double Confortable avec fenêtre. Slug Booking = point-a-edinburgh.html (pas -haymarket).",
+      "obs": [{"window": "2026-08-04_06", "status": "booked", "price_total_eur": 521, "price_pn_eur": 260, "checked": "2026-06-28", "note": "RÉSERVÉ ✓ (Double Confortable avec Fenêtre, tarif Genius €520,95)"}]
     }
   ]
 }

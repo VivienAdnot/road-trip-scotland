@@ -7,13 +7,13 @@ const SVG='http://www.w3.org/2000/svg';
 /* ---------- Les meilleurs plans trouvés (prix réels, 2 pers., aux dates) ---------- */
 const STAYS=[
   {
-    region:'lothians', lat:55.945, lng:-3.218, star:false,
-    area:'Étape 1 · Édimbourg — Newington', best:'Bala House',
-    price:174, window:'4–6/8 · 2 nuits', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
-    pois:[['Château + Royal Mile','~20 min à pied'],['Arthur’s Seat','12 min'],['Calton Hill','10 min'],['Dean Village','12 min']],
-    alts:'Dispo aussi (Newington) : Gladstone House €242 (9.1) · The Scholar €263 (9.0). 2 nuits suffisent pour la ville (calée avant le Fringe du 7) — mais réserver tôt.',
-    note:'Re-vérifié le 28/6 aux dates 4–6/8. Guesthouse 3★, parking gratuit, 289 avis. €348 les 2 nuits.',
-    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-04&checkout=2026-08-06&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'lothians', lat:55.9445, lng:-3.2178, star:false,
+    area:'Étape 1 · Édimbourg — Haymarket (West End)', best:'Point A Hotel Haymarket ✓',
+    price:260, window:'4–6/8 · 2 nuits', rating:'8.3/10 · empl. 9.0', hero:'img/stage-dimbourg.jpg',
+    pois:[['Château + Royal Mile','~18 min à pied'],['Princes Street','~12 min'],['Dean Village','~10 min'],['Tram → aéroport (voiture J+2)','direct']],
+    alts:'RÉSERVÉ ✓. Hôtel value, chambres compactes mais excellent emplacement (Haymarket : gare + tram aéroport direct). Édimbourg = la ville, calée avant le Fringe du 7.',
+    note:'RÉSERVÉ ✓ (4–6/8). Point A Haymarket, 152 Morrison St. Note 8.3 (empl. 9.0), 4 684 avis. Double Confortable avec fenêtre. €521 les 2 nuits.',
+    url:'https://www.booking.com/hotel/gb/point-a-edinburgh.html?checkin=2026-08-04&checkout=2026-08-06&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'highlands', lat:56.876, lng:-5.130, star:false,
@@ -35,11 +35,11 @@ const STAYS=[
   },
   {
     region:'trossachs', lat:56.00, lng:-4.58, star:false,
-    area:'Étape 4 · Loch Lomond — Balloch', best:'Glenfern Guest House',
-    price:151, window:'12–14/8 · 2 nuits', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
-    pois:[['Luss & rive du loch','12 min'],['Conic Hill / Balmaha','15 min'],['Ben A’an','35 min'],['Loch Katrine (vapeur)','40 min']],
-    alts:'Dispo aussi : Tullie Inn €182 (8.5, centre Balloch) · Abbotsford €103 (8.6, le moins cher, à Dumbarton 6 km sud).',
-    note:'Re-vérifié le 28/6 aux dates 12–14/8. 3★, parking gratuit, adultes. Dernière étape avant le vol à Glasgow. €301 les 2 nuits.',
+    area:'Étape 4 · Loch Lomond — Balloch', best:'Glenfern · Cottage jacuzzi ✓',
+    price:208, window:'12–14/8 · 2 nuits', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
+    pois:[['Luss & rive du loch','12 min'],['Conic Hill / Balmaha','15 min'],['Ben A’an','35 min'],['Aéroport de Glasgow (vol J+2)','~40 min']],
+    alts:'RÉSERVÉ ✓. Cottage 1 chambre (bungalow entier) avec jacuzzi privé — la fin romantique du séjour. 2 Drumkinnon Rd, Balloch. Annulable jusqu’à l’arrivée.',
+    note:'RÉSERVÉ ✓ (12–14/8). Glenfern Guest House — Cottage 1 Chambre avec Bain à Remous (bungalow entier, jacuzzi privé). Dernière étape avant le vol à Glasgow. €417 les 2 nuits.',
     url:'https://www.booking.com/hotel/gb/glenfern-guest-house.html?checkin=2026-08-12&checkout=2026-08-14&no_rooms=1&group_adults=2&selected_currency=EUR'
   }
 ];
