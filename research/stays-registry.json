@@ -1,7 +1,8 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "updated": "2026-06-23",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Bala House 4→6 (2n, €348) · Glencoe Springburn Farmhouse 6→9 (3n, €702) · Skye Harlosh Stargazer Pod 9→12 (3n, €671) · Loch Lomond Glenfern 12→14 (2n, €301). Héberg. ≈ €2 022. Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j).",
+    "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
     "windows_format": "checkin_checkout, ex 2026-08-05_07 = 2 nuits du 5 au 7 août",
@@ -48,7 +49,8 @@
       "rating": 8.7,
       "obs": [
         {"window": "2026-08-01_03", "status": "available", "price_pn_eur": 173, "checked": "2026-06-21"},
-        {"window": "2026-08-04_07", "status": "available", "price_total_eur": 521, "price_pn_eur": 174, "checked": "2026-06-23"}
+        {"window": "2026-08-04_07", "status": "available", "price_total_eur": 521, "price_pn_eur": 174, "checked": "2026-06-28"},
+        {"window": "2026-08-04_06", "status": "available", "price_total_eur": 348, "price_pn_eur": 174, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (Édim 2n)"}
       ]
     },
     {
@@ -64,7 +66,7 @@
       "note": "Meilleur prix du séjour court.",
       "obs": [
         {"window": "2026-08-08_09", "status": "available", "price_pn_eur": 98, "checked": "2026-06-21"},
-        {"window": "2026-08-12_14", "status": "available", "price_total_eur": 301, "price_pn_eur": 151, "checked": "2026-06-23"}
+        {"window": "2026-08-12_14", "status": "available", "price_total_eur": 301, "price_pn_eur": 151, "checked": "2026-06-28"}
       ]
     },
     {
@@ -334,7 +336,10 @@
       "lat": 57.3836, "lng": -6.510163, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html", "rating": 9.9,
       "note": "PÉPITE : mieux noté de tout le scan (9.9/100). Pod adults-only NW Skye, ciel étoilé. Fait les 3 NUITS 9→12.",
-      "obs": [{"window": "2026-08-09_12", "status": "available", "price_total_eur": 677, "price_pn_eur": 226, "checked": "2026-06-23"}]
+      "obs": [
+        {"window": "2026-08-09_12", "status": "available", "price_total_eur": 677, "price_pn_eur": 226, "checked": "2026-06-23"},
+        {"window": "2026-08-09_12", "status": "available", "price_total_eur": 671, "price_pn_eur": 224, "checked": "2026-06-28", "note": "re-confirmée par coords; inchangée"}
+      ]
     },
     {
       "id": "booking:skye-fall-sleat",
@@ -429,16 +434,63 @@
       "name": "Tower Ridge House", "type": "guest_house", "town": "Torlundy (Fort William)", "region": "highlands",
       "lat": 56.853, "lng": -5.058, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/tower-ridge-house-fort-william.html", "rating": 9.2,
-      "note": "BASE CHOISIE étape Fort William (remplace Ossians, complet). 9.2, sous le Ben Nevis, ~7km N de FW. €418/2n.",
-      "obs": [{"window": "2026-08-07_09", "status": "available", "price_total_eur": 417, "price_pn_eur": 209, "checked": "2026-06-23"}]
+      "note": "Était la base Fort William (9.2, sous le Ben Nevis). COMPLET à la re-vérif du 28/06 pour 07→09 — il faut un remplaçant.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_total_eur": 417, "price_pn_eur": 209, "checked": "2026-06-23"},
+        {"window": "2026-08-07_09", "status": "sold_out", "checked": "2026-06-28", "note": "confirmé MCP + page booking.com 'no availability'"}
+      ]
     },
     {
       "id": "booking:torlinnhe-fort-william",
       "name": "Torlinnhe Guest House", "type": "guest_house", "town": "Fort William", "region": "highlands",
       "lat": 56.80, "lng": -5.12, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/torlinnhe-guest-house.html", "rating": 9.4,
-      "note": "Alt Fort William, bord du loch (Achintore Rd). Mieux noté mais plus cher.",
-      "obs": [{"window": "2026-08-07_09", "status": "available", "price_total_eur": 612, "price_pn_eur": 306, "checked": "2026-06-23"}]
+      "note": "Alt Fort William, bord du loch (Achintore Rd). Mieux noté mais plus cher. COMPLET à la re-vérif du 28/06 — repli grillé.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_total_eur": 612, "price_pn_eur": 306, "checked": "2026-06-23"},
+        {"window": "2026-08-07_09", "status": "sold_out", "checked": "2026-06-28"}
+      ]
+    },
+    {
+      "id": "booking:springburn-farmhouse-spean-bridge",
+      "name": "Springburn Farmhouse", "type": "guest_house", "town": "Spean Bridge (Lochaber)", "region": "highlands",
+      "lat": 56.886, "lng": -4.917, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/springburn-farm-house.html", "rating": 9.5,
+      "note": "BASE GLENCOE LOCKÉE (Trip ①, 3 nuits 6→9). Ferme highland 4★ adults-only, meilleur rapport qualité/prix high-rated. ~15 min N de Fort William : idéal Glen Nevis + Glenfinnan + Ben Nevis ; Glen Coe à ~40 min.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_total_eur": 481, "price_pn_eur": 240, "checked": "2026-06-28"},
+        {"window": "2026-08-06_09", "status": "available", "price_total_eur": 702, "price_pn_eur": 234, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}
+      ]
+    },
+    {
+      "id": "booking:aos-si-lodges-ballachulish",
+      "name": "Aos Si Lodges", "type": "holiday_home", "town": "Ballachulish (Glencoe)", "region": "highlands",
+      "lat": 56.686, "lng": -5.18, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/aos-si-lodges.html", "rating": 9.5,
+      "note": "Lodges bois celtiques de luxe, 7 min de Glencoe village. Option 'treat' (nuit lodge jacuzzi). Vend des nuits seules MAIS le 6/8 est complet (1ère dispo = 7/8). Donc un split ne marche qu'avec Aos Si en DERNIÈRE nuit.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_total_eur": 771, "price_pn_eur": 385, "checked": "2026-06-28"},
+        {"window": "2026-08-06_07", "status": "sold_out", "checked": "2026-06-28", "note": "le 6/8 indispo ; nuits seules dispo à partir du 7/8 (~€482)"}
+      ]
+    },
+    {
+      "id": "booking:cuilcheanna-house-onich",
+      "name": "Cuilcheanna House", "type": "guest_house", "town": "Onich (Loch Linnhe)", "region": "highlands",
+      "lat": 56.71, "lng": -5.21, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/cuilcheanna-guest-house.html", "rating": 9.3,
+      "note": "Country house pieds dans l'eau (Loch Linnhe), entre Glencoe (12 min) et Fort William. Caractère + équilibre prix.",
+      "obs": [
+        {"window": "2026-08-07_09", "status": "available", "price_total_eur": 580, "price_pn_eur": 290, "checked": "2026-06-28"},
+        {"window": "2026-08-06_09", "status": "sold_out", "checked": "2026-06-28"}
+      ]
+    },
+    {
+      "id": "booking:riverbeds-glencoe",
+      "name": "RiverBeds - Luxury Wee Lodges with Hot Tubs", "type": "holiday_home", "town": "Ballachulish (Glencoe)", "region": "highlands",
+      "lat": 56.686, "lng": -5.18, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/riverbeds.html", "rating": 9.0,
+      "note": "Splurge le plus romantique : jacuzzi privé, spa, massage en couple, piscine intérieure, resto sur place. Aux portes de la vallée de Glencoe. Alternative 3n à Springburn si on veut le hot-tub sans casser l'ancre.",
+      "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 1998, "price_pn_eur": 666, "checked": "2026-06-28"}]
     }
   ]
 }

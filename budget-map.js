@@ -9,28 +9,28 @@ const STAYS=[
   {
     region:'lothians', lat:55.945, lng:-3.218, star:false,
     area:'Étape 1 · Édimbourg — Newington', best:'Bala House',
-    price:174, window:'4–7/8 · 3 nuits', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
+    price:174, window:'4–6/8 · 2 nuits', rating:'8.7/10', hero:'img/stage-dimbourg.jpg',
     pois:[['Château + Royal Mile','~20 min à pied'],['Arthur’s Seat','12 min'],['Calton Hill','10 min'],['Dean Village','12 min']],
-    alts:'Dispo aussi (Newington) : Gladstone House €242 (9.1) · The Scholar €263 (9.0). Leg le plus demandé (Fringe) — réserver en premier.',
-    note:'Re-vérifié le 23/6 aux dates 4–7/8. Guesthouse 3★, parking gratuit, 289 avis. €522 les 3 nuits.',
-    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-04&checkout=2026-08-07&no_rooms=1&group_adults=2&selected_currency=EUR'
+    alts:'Dispo aussi (Newington) : Gladstone House €242 (9.1) · The Scholar €263 (9.0). 2 nuits suffisent pour la ville (calée avant le Fringe du 7) — mais réserver tôt.',
+    note:'Re-vérifié le 28/6 aux dates 4–6/8. Guesthouse 3★, parking gratuit, 289 avis. €348 les 2 nuits.',
+    url:'https://www.booking.com/hotel/gb/bala-house.html?checkin=2026-08-04&checkout=2026-08-06&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'highlands', lat:56.853, lng:-5.058, star:false,
-    area:'Étape 2 · Glencoe & Lochaber — Fort William (Torlundy)', best:'Tower Ridge House',
-    price:209, window:'7–9/8 · 2 nuits', rating:'9.2/10', hero:'img/stage-glencoe-highlands.jpg',
-    pois:[['Steall Falls (Glen Nevis)','15 min'],['Nevis Range / Ben Nevis','10 min'],['Viaduc de Glenfinnan','~30 min'],['Three Sisters (Glen Coe)','~35 min']],
-    alts:'Notre 1er choix Ossians est complet aux dates → remplacé par Tower Ridge House (9.2, super noté). Sinon Torlinnhe €306 (9.4, bord du loch).',
-    note:'Re-vérifié le 23/6. Sous le Ben Nevis (Torlundy), ~7 km nord de Fort William : idéal Glen Nevis + Glenfinnan sur la route de Skye. €418 les 2 nuits.',
-    url:'https://www.booking.com/hotel/gb/tower-ridge-house-fort-william.html?checkin=2026-08-07&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'highlands', lat:56.886, lng:-4.917, star:false,
+    area:'Étape 2 · Glencoe & Lochaber — Spean Bridge', best:'Springburn Farmhouse',
+    price:234, window:'6–9/8 · 3 nuits', rating:'9.5/10', hero:'img/stage-glencoe-highlands.jpg',
+    pois:[['Nevis Range / Ben Nevis','~15 min'],['Steall Falls (Glen Nevis)','~25 min'],['Viaduc de Glenfinnan','~35 min'],['Three Sisters (Glen Coe)','~40 min']],
+    alts:'Tower Ridge ET Torlinnhe sont complets aux dates → Springburn (9.5, ferme adults-only, meilleur rapport qualité/prix). Sinon Aos Si Lodges €385/n (9.5, lodges jacuzzi à Glencoe) · RiverBeds €666/n (splurge spa + jacuzzi privé).',
+    note:'Re-vérifié le 28/6. Ferme 4★ adults-only à Spean Bridge, ~15 min nord de Fort William : idéal Glen Nevis + Glenfinnan + Ben Nevis, Glen Coe à ~40 min. €702 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/springburn-farm-house.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'skye', lat:57.3836, lng:-6.510, star:true,
     area:'Étape 3 · Isle of Skye — Harlosh (NW)', best:'Harlosh Stargazer Pod',
-    price:226, window:'9–12/8 · 3 nuits', rating:'9.9/10', hero:'img/stage-isle-of-skye.jpg',
+    price:224, window:'9–12/8 · 3 nuits', rating:'9.9/10', hero:'img/stage-isle-of-skye.jpg',
     pois:[['Château de Dunvegan','~20 min'],['Neist Point (phare)','~35 min'],['Fairy Pools (Glen Brittle)','~40 min'],['Old Man of Storr / Quiraing','~50–60 min']],
     alts:'LA pépite : 9.9/100 avis, le mieux noté ET le moins cher des 3 nuits dispo sur l’île. Pod ciel étoilé, adultes. Plus près des icônes (au pied du Storr) : Keeper’s Cottage Staffin €297, Cottage by the Sea Culnacnoc €491 (3 ch, bord de mer).',
-    note:'★ Le point fort du séjour. NW de l’île : ~50 min des icônes du Trotternish (Storr/Quiraing) mais aux portes de Neist Point, Dunvegan et des Fairy Pools. Booking annonçait Skye « complet » — un mirage hôtelier : le self-catering est dispo. €677 les 3 nuits.',
+    note:'★ Le point fort du séjour. NW de l’île : ~50 min des icônes du Trotternish (Storr/Quiraing) mais aux portes de Neist Point, Dunvegan et des Fairy Pools. Booking annonçait Skye « complet » — un mirage hôtelier : le self-catering est dispo. Re-confirmé le 28/6 : €671 les 3 nuits.',
     url:'https://www.booking.com/hotel/gb/harlosh-hideaways-stargazer-pod.html?checkin=2026-08-09&checkout=2026-08-12&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
@@ -39,7 +39,7 @@ const STAYS=[
     price:151, window:'12–14/8 · 2 nuits', rating:'8.1/10', hero:'img/stage-loch-lomond-glasgow.jpg',
     pois:[['Luss & rive du loch','12 min'],['Conic Hill / Balmaha','15 min'],['Ben A’an','35 min'],['Loch Katrine (vapeur)','40 min']],
     alts:'Dispo aussi : Tullie Inn €182 (8.5, centre Balloch) · Abbotsford €103 (8.6, le moins cher, à Dumbarton 6 km sud).',
-    note:'Re-vérifié le 23/6 aux dates 12–14/8. 3★, parking gratuit, adultes. Dernière étape avant le vol à Glasgow. €302 les 2 nuits.',
+    note:'Re-vérifié le 28/6 aux dates 12–14/8. 3★, parking gratuit, adultes. Dernière étape avant le vol à Glasgow. €301 les 2 nuits.',
     url:'https://www.booking.com/hotel/gb/glenfern-guest-house.html?checkin=2026-08-12&checkout=2026-08-14&no_rooms=1&group_adults=2&selected_currency=EUR'
   }
 ];

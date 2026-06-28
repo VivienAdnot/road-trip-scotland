@@ -128,37 +128,37 @@ const BASES = {
   },
 
   glencoe: {
-    name:'Glencoe & Lochaber', region:'highlands', lat:56.6839, lng:-5.1050,
+    name:'Glencoe & Lochaber', region:'highlands', lat:56.8860, lng:-4.9170,
     hero:'img/stage-glencoe-highlands.jpg',
-    tag:'Le cœur sauvage des Highlands · base Fort William',
-    blurb:"La vallée la plus dramatique d'Écosse : parois sombres, cascades, cerfs. Base idéale pour rayonner (Glenfinnan, Glen Nevis, Oban) sans bouger les valises. Pubs trad et auberges de montagne.",
-    lodging:"Base autour de Glencoe village / Ballachulish / Fort William. Clachaig Inn = institution rando + bières.",
-    radius:"Rayon riche à ≤ 1h15 : Glenfinnan, Glen Nevis, jusqu'à Oban (1h30).",
+    tag:'Le cœur sauvage des Highlands · base Spean Bridge',
+    blurb:"Trois nuits d'ancrage au cœur du Lochaber, à la ferme <b>Springburn</b> (Spean Bridge, 9.5, adults-only). De là on rayonne sans rebouger les valises : Glen Nevis et le Ben Nevis à deux pas, le viaduc de Glenfinnan à l'ouest, la vallée dramatique de Glen Coe au sud. Pubs trad et auberges de montagne.",
+    lodging:"Springburn Farmhouse (Spean Bridge), ferme 4★ adults-only pour les 3 nuits. Clachaig Inn / Ben Nevis Inn pour les bières au coin du feu.",
+    radius:"Glen Nevis & Nevis Range à ≤ 20 min, Glenfinnan ~35 min, Glen Coe ~40 min, jusqu'à Oban (~1h20).",
     activities:[
-      {name:'Rando Lost Valley (Coire Gabhail)', type:'rando', lat:56.6700, lng:-4.9800, drive:15, intensity:3, time:'2h30-3h', must:true, img:W.steall,
+      {name:'Rando Lost Valley (Coire Gabhail)', type:'rando', lat:56.6700, lng:-4.9800, drive:45, intensity:3, time:'2h30-3h', must:true, img:W.steall,
        desc:"La 'vallée cachée' où le clan MacDonald planquait son bétail : passage de rivière, gorge, amphithéâtre de montagnes. Sentier rocailleux, chaussures sérieuses.", tip:"Pas après de fortes pluies (gué de rivière)."},
-      {name:'Three Sisters (Glen Coe)', type:'vue', lat:56.6680, lng:-4.9690, drive:15, intensity:1, time:'30 min', must:true, img:'img/site-three-sisters-glencoe.jpg',
+      {name:'Three Sisters (Glen Coe)', type:'vue', lat:56.6680, lng:-4.9690, drive:40, intensity:1, time:'30 min', must:true, img:'img/site-three-sisters-glencoe.jpg',
        desc:"Les trois éperons mythiques de la vallée depuis le belvédère de la route A82. Arrêt photo incontournable."},
-      {name:'Glen Etive (route Skyfall)', type:'vue', lat:56.6200, lng:-4.9900, drive:20, intensity:1, time:'1-2 h', must:false, img:'img/site-glen-etive.jpg',
+      {name:'Glen Etive (route Skyfall)', type:'vue', lat:56.6200, lng:-4.9900, drive:50, intensity:1, time:'1-2 h', must:false, img:'img/site-glen-etive.jpg',
        desc:"Petite route en cul-de-sac le long d'une rivière (le décor final de Skyfall). Cerfs, cascades, solitude. Aller-retour tranquille en voiture.", tip:"Route étroite à voie unique : patience aux 'passing places'."},
-      {name:'Viaduc de Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:55, intensity:2, time:'demi-journée', must:true, img:'img/site-viaduc-de-glenfinnan.jpg',
+      {name:'Viaduc de Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:35, intensity:2, time:'demi-journée', must:true, img:'img/site-viaduc-de-glenfinnan.jpg',
        desc:"Le viaduc d'Harry Potter ; le Jacobite (train à vapeur) le franchit vers 11h et 15h. Court sentier jusqu'au point de vue.", tip:"Arriver tôt, le parking sature ; viser l'horaire de passage du train."},
-      {name:'Steall Falls (Glen Nevis)', type:'rando', lat:56.7700, lng:-4.9700, drive:35, intensity:2, time:'2h', must:false, img:W.steall,
+      {name:'Steall Falls (Glen Nevis)', type:'rando', lat:56.7700, lng:-4.9700, drive:25, intensity:2, time:'2h', must:false, img:W.steall,
        desc:"Sentier de gorge le long de la rivière jusqu'à une grande cascade de 120 m et sa prairie suspendue. Très Tolkien."},
-      {name:'Nevis Range (télécabine)', type:'vue', lat:56.8200, lng:-5.0080, drive:40, intensity:1, time:'demi-journée', must:false, img:W.nevisRange,
+      {name:'Nevis Range (télécabine)', type:'vue', lat:56.8200, lng:-5.0080, drive:15, intensity:1, time:'demi-journée', must:false, img:W.nevisRange,
        desc:"Télécabine au-dessus de Fort William : altitude facile, vue sur le Ben Nevis et les Aonachs sans suer.", tip:"Plan B parfait par météo moyenne."},
-      {name:'Oban (fruits de mer)', type:'village', lat:56.4150, lng:-5.4720, drive:75, intensity:1, time:'journée', must:false, img:W.oban,
+      {name:'Oban (fruits de mer)', type:'village', lat:56.4150, lng:-5.4720, drive:80, intensity:1, time:'journée', must:false, img:W.oban,
        desc:"Port animé de la côte ouest, capitale des fruits de mer. Stalls sur le quai, distillerie en ville, vue sur les îles."},
-      {name:'Castle Stalker', type:'château', lat:56.5640, lng:-5.3920, drive:45, intensity:1, time:'30-45 min', must:false, img:W.castleStalker,
+      {name:'Castle Stalker', type:'château', lat:56.5640, lng:-5.3920, drive:55, intensity:1, time:'30-45 min', must:false, img:W.castleStalker,
        desc:"Petit château sur un îlot (Monty Python !) ; arrêt photo depuis le View Café sur la route d'Oban."},
-      {name:'Rannoch Moor', type:'vue', lat:56.6107, lng:-4.7796, drive:30, intensity:1, time:'arrêt', must:false, img:W.rannoch,
+      {name:'Rannoch Moor', type:'vue', lat:56.6107, lng:-4.7796, drive:50, intensity:1, time:'arrêt', must:false, img:W.rannoch,
        desc:"Immense tourbière sauvage avant d'entrer dans Glencoe : un des paysages les plus vides et beaux d'Écosse. Arrêt sur la route."},
-      {name:'Ardnamurchan (péninsule)', type:'nature', lat:56.7270, lng:-6.2290, drive:90, intensity:2, time:'journée', must:false, img:W.ardnamurchan,
+      {name:'Ardnamurchan (péninsule)', type:'nature', lat:56.7270, lng:-6.2290, drive:95, intensity:2, time:'journée', must:false, img:W.ardnamurchan,
        desc:"Le point le plus à l'ouest de l'île de Grande-Bretagne : phare, plages désertes, route sauvage. Journée entière, peu de monde."},
-      {name:'Ben Nevis (sommet)', type:'rando', lat:56.7969, lng:-5.0036, drive:35, intensity:3, time:'7-9 h', must:false, img:W.benNevis,
+      {name:'Ben Nevis (sommet)', type:'rando', lat:56.7969, lng:-5.0036, drive:20, intensity:3, time:'7-9 h', must:false, img:W.benNevis,
        desc:"Le plus haut sommet de Grande-Bretagne (1345 m). Longue journée exigeante — <b>hors de notre style</b> (pas de mode hardcore), mentionné pour info.", tip:"On préfère Steall Falls ou la télécabine pour les vues."},
-      {name:'Clachaig Inn', type:'pub', lat:56.6770, lng:-5.0830, drive:15, intensity:1, time:'soirée', must:false, img:'',
-       desc:"Pub-auberge mythique des grimpeurs au fond de la vallée : real ales, feu de cheminée, ambiance Highlands. Ben Nevis Inn aussi côté Fort William."}
+      {name:'Clachaig Inn', type:'pub', lat:56.6770, lng:-5.0830, drive:40, intensity:1, time:'soirée', must:false, img:'',
+       desc:"Pub-auberge mythique des grimpeurs au fond de la vallée : real ales, feu de cheminée, ambiance Highlands. Ben Nevis Inn juste à côté de la base."}
     ]
   },
 
@@ -244,23 +244,23 @@ const TRIPS = {
     hero:'img/stage-isle-of-skye.jpg',
     note:"4 bases, 3 transferts (Audrey ne défait les valises que 4 fois). Skye sur 3 nuits autour d’une pépite : le Harlosh Stargazer Pod (9.9/10), au nord-ouest de l’île — aux portes de Neist Point, Dunvegan et des Fairy Pools, à ~50 min des icônes du Trotternish (Old Man of Storr, Quiraing). Hébergements & budget détaillés dans l’onglet 💷 Budget.",
     bases:[
-      {base:'edinburgh', nights:3},
-      {base:'glencoe',   nights:2},
+      {base:'edinburgh', nights:2},
+      {base:'glencoe',   nights:3},
       {base:'skye',      nights:3},
       {base:'lomond',    nights:2}
     ],
     legs:[
-      {from:'edinburgh', to:'glencoe', via:'Stirling', drive:'~2h45 de conduite',
+      {from:'edinburgh', to:'glencoe', via:'Stirling · Glencoe', drive:'~3h15 de conduite',
        stops:[
          {at:'Château de Stirling', seg:'1h', why:'château + déjeuner sur le départ'},
          {at:'Tyndrum (Green Welly)', seg:'1h', why:'pause café / essence'},
-         {at:'Rannoch Moor', seg:'45 min', why:'arrêt photo, entrée dans Glencoe'}
+         {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Spean Bridge'}
        ]},
-      {from:'glencoe', to:'skye', via:'Eilean Donan', drive:'~2h45 de conduite',
+      {from:'glencoe', to:'skye', via:'Loch Garry · Eilean Donan', drive:'~2h30 de conduite',
        stops:[
-         {at:'Fort William', seg:'30 min', why:'ravitaillement avant la route de l’île'},
-         {at:'Eilean Donan', seg:'1h15', why:'le château sur son îlot — arrêt culte'},
-         {at:'Sligachan', seg:'1h', why:'les Cuillin avant d’arriver à Harlosh'}
+         {at:'Loch Garry (viewpoint)', seg:'45 min', why:'le loch en forme de carte d’Écosse, plein ouest'},
+         {at:'Eilean Donan', seg:'1h', why:'le château sur son îlot — arrêt culte'},
+         {at:'Sligachan', seg:'45 min', why:'les Cuillin avant d’arriver à Harlosh'}
        ]},
       {from:'skye', to:'lomond', via:'Glen Shiel · Glencoe · Rannoch Moor', drive:'~4h de conduite', warn:true,
        stops:[
