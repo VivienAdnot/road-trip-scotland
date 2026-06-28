@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "Référentiel persistant des hébergements scannés pour le road trip Écosse 2026. But: éviter de re-query les mêmes propriétés. Chaque propriété porte ses observations de dispo/prix par fenêtre de dates.",
-    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Point A Hotel Haymarket 4→6 (2n, €521) ✓ RÉSERVÉ · Glencoe Acorn Cottage & Little Oaks (Muirshearlich) 6→9 (3n, €660) · Skye Ardvreck Chalet (Kyleakin, self-catering) 9→12 (3n, €826) ✓ RÉSERVÉ · Loch Lomond Glenfern · Cottage 1 chambre avec jacuzzi privé 12→14 (2n, €417) ✓ RÉSERVÉ. Héberg. ≈ €2 424. STATUT 28/6 : Édimbourg + Skye + Loch Lomond RÉSERVÉS ✓ ; reste Glencoe = Acorn (demande en attente, réponse hôte sous 24h) avec plan B instantané Appin €799 (annulable jusqu'au 7/7). NB: journée du 28/6 = 3 Skye tombés (Harlosh, puis Beinn Edra) avant qu'Ardvreck soit verrouillé ; Springburn (Glencoe) aussi tombé → Glencoe = Acorn Cottage (demande envoyée, réponse hôte sous 24h, PAS instantané → plan B instantané à garder). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 530.",
+    "locked_trip": "Trip ① Highlands (verrouillé 2026-06-28, 10 nuits, 4→14 août, 2 pers.) : Édimbourg Point A Hotel Haymarket 4→6 (2n, €521) ✓ RÉSERVÉ · Glencoe Appin Lochside Apartment (Achintore Rd, Fort William) 6→9 (3n, €799) ✓ RÉSERVÉ · Skye Ardvreck Chalet (Kyleakin, self-catering) 9→12 (3n, €826) ✓ RÉSERVÉ · Loch Lomond Glenfern · Cottage 1 chambre avec jacuzzi privé 12→14 (2n, €417) ✓ RÉSERVÉ. Héberg. ≈ €2 563. STATUT 28/6 : LES 4 HÉBERGEMENTS RÉSERVÉS ✓ (Point A · Appin · Ardvreck · Glenfern cottage jacuzzi). Acorn abandonné au profit d'Appin (instantané) — la demande Acorn s'annule. Restent à réserver : vols + voiture. NB: journée du 28/6 = 3 Skye tombés (Harlosh, puis Beinn Edra) avant qu'Ardvreck soit verrouillé ; Springburn (Glencoe) aussi tombé → Glencoe = Acorn Cottage (demande envoyée, réponse hôte sous 24h, PAS instantané → plan B instantané à garder). Skye ne peut pas s'étendre (4 nuits complètes). Édim arbitré à 2n (la 3e nuit vaut mieux dans les Highlands : +€48 seulement). Voiture EDI→GLA 6→14 (8 j). Vols open-jaw easyJet (vérif 2026-06-28) : aller CDG→EDI 4/8 13h30-14h20 ~€196/pers ; retour GLA→CDG 14/8 20h45-23h35 ~€51/pers (CHOISI le 28/6 : seul direct après 13h, matinée libre à Loch Lomond ; arrivée CDG tardive → taxi/VTC) ; ~€495 les 2 en cabine, +~€256 soute. Kayak multi-villes : kayak.com/flights/CDG-EDI/2026-08-04/GLA-PAR/2026-08-14/2adults (chargement vérifié). Total couple indicatif ≈ €4 670.",
     "updated": "2026-06-28",
     "fx_note": "£→€ ≈ 1.17",
     "policy": "Pas de plafond max. Critère = qualité / souvenir inoubliable. Prix = axe d'arbitrage, pas barrière. Arrivée flexible (peut décaler après le 1er août).",
@@ -500,8 +500,8 @@
       "name": "Acorn Cottage & Little Oaks", "type": "holiday_home", "town": "Muirshearlich (Fort William)", "region": "highlands",
       "lat": 56.876, "lng": -5.130, "source": "booking.com",
       "url": "https://www.booking.com/hotel/gb/acorn-cottage-fort-william.html", "rating": 9.5,
-      "note": "BASE GLENCOE LOCKÉE (remplace Springburn tombé). Cottage de campagne avec jardin, NW de Fort William, près du canal calédonien / route de Glenfinnan. Glen Nevis + Ben Nevis ~15 min, Glenfinnan ~30 min, Glen Coe ~40 min. ~47 avis (petit échantillon) mais 9.5.",
-      "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 660, "price_pn_eur": 220, "checked": "2026-06-28", "note": "FENÊTRE LOCKÉE (3n)"}]
+      "note": "Était le 1er choix Glencoe (Springburn tombé). Cottage 9.5 avec jardin, Muirshearlich. ABANDONNÉ : pas de réservation instantanée (approbation hôte sous 24h) → on a pris Appin (instantané) à la place ; la pré-demande Acorn s'annule.",
+      "obs": [{"window": "2026-08-06_09", "status": "available", "price_total_eur": 660, "price_pn_eur": 220, "checked": "2026-06-28", "note": "dispo mais request-to-book (24h) → non retenu"}]
     },
     {
       "id": "booking:bunroy-park-roy-bridge",
@@ -537,6 +537,14 @@
       "url": "https://www.booking.com/hotel/gb/point-a-edinburgh.html", "rating": 8.3,
       "note": "BASE ÉDIMBOURG RÉSERVÉE ✓ (28/6). 152 Morrison St EH3 8EB. Hôtel value chambres compactes, note globale 8.3 (4 684 avis) mais EMPLACEMENT 9.0 (Haymarket : gare + tram aéroport direct, ~15-18 min à pied de l'Old Town). Chambre Double Confortable avec fenêtre. Slug Booking = point-a-edinburgh.html (pas -haymarket).",
       "obs": [{"window": "2026-08-04_06", "status": "booked", "price_total_eur": 521, "price_pn_eur": 260, "checked": "2026-06-28", "note": "RÉSERVÉ ✓ (Double Confortable avec Fenêtre, tarif Genius €520,95)"}]
+    },
+    {
+      "id": "booking:appin-lochside-apartment-fort-william",
+      "name": "Appin, Beautiful Lochside Apartment with Balcony", "type": "holiday_home", "town": "Fort William (Achintore Rd)", "region": "highlands",
+      "lat": 56.805, "lng": -5.118, "source": "booking.com",
+      "url": "https://www.booking.com/hotel/gb/appin-beautiful-lochside-apartment-with-balcony.html", "rating": 9.0,
+      "note": "BASE GLENCOE RÉSERVÉE ✓ (28/6). Appartement self-catering avec balcon vue Loch Linnhe, Achintore Rd, Fort William PH33 6RW. Pris en filet INSTANTANÉ (annulation gratuite) après l'attente 24h sur Acorn. Glen Nevis ~15 min, Glen Coe ~28 min, Glenfinnan ~30 min. Clés en coffre sur place.",
+      "obs": [{"window": "2026-08-06_09", "status": "booked", "price_total_eur": 799, "price_pn_eur": 266, "checked": "2026-06-28", "note": "RÉSERVÉ ✓ (tarif annulable jusqu'au 7/7)"}]
     }
   ]
 }
