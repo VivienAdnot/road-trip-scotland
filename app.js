@@ -16,6 +16,7 @@ function nav(){
     <a class="brand" href="index.html"><span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>Road trip Écosse</a>
     <a class="tab ${trip.id==='middle'?'active':''}" href="middle.html">Itinéraire · ${trip.nights} n</a>
     <a class="tab" href="budget.html">💷 Budget</a>
+    <a class="tab" href="preparatifs.html">🎒 Préparatifs</a>
   </div></nav>`;
 }
 /* ---------- hero ---------- */
