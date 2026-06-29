@@ -16,13 +16,13 @@ const STAYS=[
     url:'https://www.booking.com/hotel/gb/point-a-edinburgh.html?checkin=2026-08-04&checkout=2026-08-06&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
-    region:'highlands', lat:56.805, lng:-5.118, star:false,
-    area:'Étape 2 · Glencoe & Lochaber — Fort William (Achintore Rd)', best:'Appin · Lochside Apartment ✓',
-    price:266, window:'6–9/8 · 3 nuits', rating:'9.0/10', hero:'img/stage-glencoe-highlands.jpg',
-    pois:[['Nevis Range / Ben Nevis','~15 min'],['Steall Falls (Glen Nevis)','~15 min'],['Three Sisters (Glen Coe)','~28 min'],['Viaduc de Glenfinnan','~30 min']],
-    alts:'RÉSERVÉ ✓. Appartement self-catering avec balcon vue Loch Linnhe (Achintore Rd). Pris en filet instantané après l\'attente 24h sur Acorn (qui s\'annule). Clés en coffre sur place.',
-    note:'RÉSERVÉ ✓ (6–9/8). Appin Lochside Apartment, Achintore Rd, Fort William : balcon sur le Loch Linnhe, à deux pas de Glen Nevis et sur la route de Glen Coe (~28 min). €799 les 3 nuits.',
-    url:'https://www.booking.com/hotel/gb/appin-beautiful-lochside-apartment-with-balcony.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
+    region:'highlands', lat:56.876, lng:-5.130, star:false,
+    area:'Étape 2 · Glencoe & Lochaber — Muirshearlich (Fort William)', best:'Acorn Cottage & Little Oaks ✓',
+    price:220, window:'6–9/8 · 3 nuits', rating:'9.5/10', hero:'img/stage-glencoe-highlands.jpg',
+    pois:[['Nevis Range / Ben Nevis','~15 min'],['Steall Falls (Glen Nevis)','~15 min'],['Viaduc de Glenfinnan','~30 min'],['Three Sisters (Glen Coe)','~40 min']],
+    alts:'RÉSERVÉ ✓. Cottage de caractère avec jardin (9.5), Muirshearlich, NW de Fort William. Confirmé après l\'attente hôte ; Appin avait été pris en filet puis annulé.',
+    note:'RÉSERVÉ ✓ (6–9/8). Acorn Cottage & Little Oaks, Muirshearlich : cottage de campagne avec jardin, idéal Glen Nevis + Glenfinnan + Ben Nevis, Glen Coe à ~40 min. €660 les 3 nuits.',
+    url:'https://www.booking.com/hotel/gb/acorn-cottage-fort-william.html?checkin=2026-08-06&checkout=2026-08-09&no_rooms=1&group_adults=2&selected_currency=EUR'
   },
   {
     region:'skye', lat:57.2756, lng:-5.7385, star:true,

@@ -128,18 +128,18 @@ const BASES = {
   },
 
   glencoe: {
-    name:'Glencoe & Lochaber', region:'highlands', lat:56.8050, lng:-5.1180,
+    name:'Glencoe & Lochaber', region:'highlands', lat:56.8760, lng:-5.1300,
     hero:'img/stage-glencoe-highlands.jpg',
-    tag:'Le cœur sauvage des Highlands · base Fort William (Achintore Rd)',
-    blurb:"Trois nuits d'ancrage au cœur du Lochaber, à l'<b>Appin Lochside Apartment</b> (Achintore Rd, 9.0, appartement avec balcon vue Loch Linnhe, au sud de Fort William). De là on rayonne sans rebouger les valises : Glen Nevis et le Ben Nevis à deux pas, la vallée dramatique de Glen Coe au sud, le viaduc de Glenfinnan à l'ouest. Pubs trad et auberges de montagne.",
-    lodging:"Appin, Lochside Apartment with Balcony (Achintore Rd, Fort William), au bord du Loch Linnhe, pour les 3 nuits. Clachaig Inn / Ben Nevis Inn pour les bières au coin du feu.",
-    radius:"Glen Nevis & Nevis Range à ≤ 15 min, Glen Coe ~28 min, Glenfinnan ~30 min, jusqu'à Oban (~1h15).",
+    tag:'Le cœur sauvage des Highlands · base Fort William (Muirshearlich)',
+    blurb:"Trois nuits d'ancrage au cœur du Lochaber, à <b>Acorn Cottage</b> (Muirshearlich, 9.5, cottage de caractère avec jardin, NW de Fort William). De là on rayonne sans rebouger les valises : Glen Nevis et le Ben Nevis à deux pas, le viaduc de Glenfinnan à l'ouest, la vallée dramatique de Glen Coe au sud. Pubs trad et auberges de montagne.",
+    lodging:"Acorn Cottage & Little Oaks (Muirshearlich), cottage de campagne avec jardin pour les 3 nuits. Clachaig Inn / Ben Nevis Inn pour les bières au coin du feu.",
+    radius:"Glen Nevis & Nevis Range à ≤ 15 min, Glenfinnan ~30 min, Glen Coe ~40 min, jusqu'à Oban (~1h20).",
     activities:[
-      {name:'Rando Lost Valley (Coire Gabhail)', type:'rando', lat:56.6700, lng:-4.9800, drive:30, intensity:3, time:'2h30-3h', must:true, img:W.steall,
+      {name:'Rando Lost Valley (Coire Gabhail)', type:'rando', lat:56.6700, lng:-4.9800, drive:45, intensity:3, time:'2h30-3h', must:true, img:W.steall,
        desc:"La 'vallée cachée' où le clan MacDonald planquait son bétail : passage de rivière, gorge, amphithéâtre de montagnes. Sentier rocailleux, chaussures sérieuses.", tip:"Pas après de fortes pluies (gué de rivière)."},
-      {name:'Three Sisters (Glen Coe)', type:'vue', lat:56.6680, lng:-4.9690, drive:28, intensity:1, time:'30 min', must:true, img:'img/site-three-sisters-glencoe.jpg',
+      {name:'Three Sisters (Glen Coe)', type:'vue', lat:56.6680, lng:-4.9690, drive:40, intensity:1, time:'30 min', must:true, img:'img/site-three-sisters-glencoe.jpg',
        desc:"Les trois éperons mythiques de la vallée depuis le belvédère de la route A82. Arrêt photo incontournable."},
-      {name:'Glen Etive (route Skyfall)', type:'vue', lat:56.6200, lng:-4.9900, drive:35, intensity:1, time:'1-2 h', must:false, img:'img/site-glen-etive.jpg',
+      {name:'Glen Etive (route Skyfall)', type:'vue', lat:56.6200, lng:-4.9900, drive:50, intensity:1, time:'1-2 h', must:false, img:'img/site-glen-etive.jpg',
        desc:"Petite route en cul-de-sac le long d'une rivière (le décor final de Skyfall). Cerfs, cascades, solitude. Aller-retour tranquille en voiture.", tip:"Route étroite à voie unique : patience aux 'passing places'."},
       {name:'Viaduc de Glenfinnan + train à vapeur', type:'train', lat:56.8716, lng:-5.4331, drive:30, intensity:2, time:'demi-journée', must:true, img:'img/site-viaduc-de-glenfinnan.jpg',
        desc:"Le viaduc d'Harry Potter ; le Jacobite (train à vapeur) le franchit vers 11h et 15h. Court sentier jusqu'au point de vue.", tip:"Arriver tôt, le parking sature ; viser l'horaire de passage du train."},
@@ -147,17 +147,17 @@ const BASES = {
        desc:"Sentier de gorge le long de la rivière jusqu'à une grande cascade de 120 m et sa prairie suspendue. Très Tolkien."},
       {name:'Nevis Range (télécabine)', type:'vue', lat:56.8200, lng:-5.0080, drive:15, intensity:1, time:'demi-journée', must:false, img:W.nevisRange,
        desc:"Télécabine au-dessus de Fort William : altitude facile, vue sur le Ben Nevis et les Aonachs sans suer.", tip:"Plan B parfait par météo moyenne."},
-      {name:'Oban (fruits de mer)', type:'village', lat:56.4150, lng:-5.4720, drive:75, intensity:1, time:'journée', must:false, img:W.oban,
+      {name:'Oban (fruits de mer)', type:'village', lat:56.4150, lng:-5.4720, drive:80, intensity:1, time:'journée', must:false, img:W.oban,
        desc:"Port animé de la côte ouest, capitale des fruits de mer. Stalls sur le quai, distillerie en ville, vue sur les îles."},
-      {name:'Castle Stalker', type:'château', lat:56.5640, lng:-5.3920, drive:40, intensity:1, time:'30-45 min', must:false, img:W.castleStalker,
+      {name:'Castle Stalker', type:'château', lat:56.5640, lng:-5.3920, drive:55, intensity:1, time:'30-45 min', must:false, img:W.castleStalker,
        desc:"Petit château sur un îlot (Monty Python !) ; arrêt photo depuis le View Café sur la route d'Oban."},
-      {name:'Rannoch Moor', type:'vue', lat:56.6107, lng:-4.7796, drive:40, intensity:1, time:'arrêt', must:false, img:W.rannoch,
+      {name:'Rannoch Moor', type:'vue', lat:56.6107, lng:-4.7796, drive:50, intensity:1, time:'arrêt', must:false, img:W.rannoch,
        desc:"Immense tourbière sauvage avant d'entrer dans Glencoe : un des paysages les plus vides et beaux d'Écosse. Arrêt sur la route."},
       {name:'Ardnamurchan (péninsule)', type:'nature', lat:56.7270, lng:-6.2290, drive:95, intensity:2, time:'journée', must:false, img:W.ardnamurchan,
        desc:"Le point le plus à l'ouest de l'île de Grande-Bretagne : phare, plages désertes, route sauvage. Journée entière, peu de monde."},
       {name:'Ben Nevis (sommet)', type:'rando', lat:56.7969, lng:-5.0036, drive:15, intensity:3, time:'7-9 h', must:false, img:W.benNevis,
        desc:"Le plus haut sommet de Grande-Bretagne (1345 m). Longue journée exigeante — <b>hors de notre style</b> (pas de mode hardcore), mentionné pour info.", tip:"On préfère Steall Falls ou la télécabine pour les vues."},
-      {name:'Clachaig Inn', type:'pub', lat:56.6770, lng:-5.0830, drive:25, intensity:1, time:'soirée', must:false, img:'',
+      {name:'Clachaig Inn', type:'pub', lat:56.6770, lng:-5.0830, drive:40, intensity:1, time:'soirée', must:false, img:'',
        desc:"Pub-auberge mythique des grimpeurs au fond de la vallée : real ales, feu de cheminée, ambiance Highlands. Ben Nevis Inn aussi tout près de la base."}
     ]
   },
@@ -254,7 +254,7 @@ const TRIPS = {
        stops:[
          {at:'Château de Stirling', seg:'1h', why:'château + déjeuner sur le départ'},
          {at:'Tyndrum (Green Welly)', seg:'1h', why:'pause café / essence'},
-         {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Appin (Achintore Rd, bord du Loch Linnhe)'}
+         {at:'Rannoch Moor → Glen Coe → Fort William', seg:'1h15', why:'on traverse le cœur sauvage jusqu’à Muirshearlich (Acorn Cottage)'}
        ]},
       {from:'glencoe', to:'skye', via:'Loch Garry · Eilean Donan', drive:'~2h15 de conduite',
        stops:[
